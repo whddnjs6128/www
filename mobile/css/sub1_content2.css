@@ -1,0 +1,8 @@
+/* 기업개요 ceo인사말 */
+.wrap .visual{background: url(../images/sub1/visual.png)no-repeat center;background-size: cover;}
+#content .ceo_img{text-align: center;}
+#content .ceo_img img{width: 373px; height: 600px;}
+#content .ceo_txt p{margin: 2rem 5%;  font-size: 1.2rem; line-height: 2rem; text-align: justify;}
+#content .ceo_txt p:last-of-type{font-weight: 700; margin-bottom: 50px;}
+#content .ceo_txt p strong{font-size: 1.5rem; font-weight: 700;}
+#content .ceo_txt p strong span{color: #00abcd;}

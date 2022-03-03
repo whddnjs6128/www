@@ -1,0 +1,14 @@
+/* 기업개요 */
+.wrap .visual{background: url(../images/sub1/visual.png)no-repeat center;background-size: cover;}
+
+#content .intro img{width: 90%; margin-left: 5%; margin-right: 5%;}
+#content .intro dl{background: #f9f9f9; padding: 30px 5%; margin-bottom: 50px;}
+#content .intro dl dt{font-size: 1.5rem; font-weight: 700; color: #00abcd; margin-bottom: 2rem;}
+#content .intro dl dd{text-align: justify; font-size: 1.2rem; line-height: 2rem;}
+
+#content .vision ul li:first-of-type{background: url(../images/sub1/missonx2.png) no-repeat center; background-size: cover; height: 200px; margin-bottom: 2rem;}
+#content .vision ul li:nth-of-type(2){background: url(../images/sub1/visionx2.png) no-repeat center; background-size: cover; height: 200px; margin-bottom: 50px;}
+
+#content .vision dl{text-align: center; color: #fff;}
+#content .vision dl dt{font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; padding-top: 61px;}
+#content .vision dl dd{font-size: 1.2rem;}

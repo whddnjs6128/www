@@ -1,0 +1,8 @@
+/* 서브 공통 css */
+.wrap .visual{width: 100%; height: 212px; position: relative;}
+.wrap .visual h3{ text-align: center; position: absolute; top: 50%; color: #fff; width: 100%; font-size: 2rem; font-weight: 400;}
+#content .title_area{margin-top: 50px; margin-bottom: 50px;}
+#content .title_area h2{text-align: center; font-size: 2.2rem; font-weight: 700;}
+
+#content h3{font-size: 1.7rem; margin-left: 5%; margin-bottom: 30px; position: relative;}
+#content h3::before{content: '';display: block; width: 6px; height: 6px; border-radius: 50%; position: absolute; left: -5px; top: -5px; background: #00abcd;}

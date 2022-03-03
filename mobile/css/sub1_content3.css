@@ -1,0 +1,23 @@
+/* 오시는 길 */
+.wrap .visual{background: url(../images/sub1/visual.png)no-repeat center;background-size: cover;}
+
+#content .content_area .kakao{margin-top: 50px;}
+
+#content .content_area .map_info{overflow: hidden;padding-top: 50px; padding-bottom: 30px; margin-bottom: 50px; border-bottom: 1px solid #eee;}
+#content .content_area .map_info .map_title{}
+#content .content_area .map_info .map_title h3{font-weight: 700;margin-top: 1rem; margin-bottom: 1rem;}
+#content .content_area .map_info .map_title span{display: block;margin-left: 5%; margin-bottom: 30px;}
+#content .content_area .map_info .map_detail{margin-left: 5%;}
+#content .content_area .map_info .map_detail ul li:first-of-type{margin-bottom: 2rem;}
+#content .content_area .map_info .map_detail ul li dl dt{font-size: 20px; font-weight: 500; margin-bottom: 1rem;}
+#content .content_area .map_info .map_detail ul li dl dt i{margin-right: 15px; transform: scale(1.3);}
+#content .content_area .map_info .map_detail ul li dl span{display: inline-block; margin-right: 11px; height: 22px; font-size: 12px; color: #fff; line-height: 22px; box-sizing: border-box; text-align: center; padding: 0 13px;}
+#content .content_area .map_info .map_detail ul li dl .line1{background: #0052A4;}
+#content .content_area .map_info .map_detail ul li dl .line2{background: #009D3E;}
+#content .content_area .map_info .map_detail ul li dl .line3{background: #F5A200;}
+
+
+
+#content .content_area .contlist:first-of-type{display: block;}
+#content .content_area .contlist:nth-child(2){position: absolute; left:-1000% }
+

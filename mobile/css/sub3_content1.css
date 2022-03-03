@@ -1,0 +1,22 @@
+/* 연구개발 -연구본부 */
+.wrap .visual{background: url(../images/sub3/visual.png)no-repeat center;background-size: cover;}
+
+
+#content .content_area p.mid_con{text-align: justify; padding:30px 5%; font-size: 1.2rem;position: relative;line-height: 2rem;}
+#content .content_area p.mid_con::before{content: ''; display: block; width: 80%; height: 1px; background: #ccc; position: absolute; bottom: 0; margin-left: 10%;}
+
+#content .content_area .top_textbox{margin-top: 30px; width:100%; height: 300px;}
+#content .content_area .top_textbox p{text-align: center; font-size: 1.5rem; font-weight: 400; color: #fff; position: relative; top: 50%; transform: translateY(-50%);}
+#content .content_area .top_textbox span{display: block; font-size: 1.8rem; font-weight: 500; }
+
+#content .content_area .division .top_textbox{background: url(../images/sub3/division.png) no-repeat center; background-size: cover;}
+
+#content .content_area .medical{margin-top: 50px; margin-bottom: 50px;}
+#content .content_area .medical:first-of-type{margin-top: 80px;}
+
+#content .content_area .medical img{width: 90%; margin: 0 5%;}
+#content .content_area .medical dl{padding: 30px 5%;}
+#content .content_area .medical dl dt{font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; color: #00abcd;}
+#content .content_area .medical dl dd{font-size: 1.2rem; line-height: 2rem; text-align: justify;}
+
+

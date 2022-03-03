@@ -1,0 +1,24 @@
+/* 정도경영-철학 */
+.wrap .visual{background: url(../images/sub4/visual.png)no-repeat center;background-size: cover;}
+
+#content .content_area {margin-bottom: 50px;}
+#content .content_area .top_textbox{margin-top: 30px; width:100%; height: 300px;}
+
+#content .content_area .philo_jeong .top_textbox{background: url(../images/sub4/philo.png) no-repeat center; background-size: cover; overflow: hidden;}
+
+#content .content_area .philo_jeong .top_textbox img{float: left; position: relative; top: 50%; transform: translateY(-50%); width: 15%; margin-left: 5%;}
+#content .content_area .philo_jeong .top_textbox p{text-align: justify; font-size: 1.3rem; font-weight: 400; margin-left: 5%;color: #333;line-height: 2rem; float: left; position: relative; top: 50%; transform: translateY(-50%);}
+#content .content_area .philo_jeong .top_textbox span{display: block; font-size: 1.6rem; font-weight: 500; margin-bottom: 10px; color: #05606c;}
+
+#content .content_area p.mid_con{text-align: justify; padding:30px 0; font-size: 1.2rem;position: relative; margin: 0 5%; line-height: 2rem;}
+#content .content_area p.mid_con::before{content: ''; display: block; width: 80%; height: 1px; background: #ccc; position: absolute; bottom: 0; margin-left: 10%;}
+#content .content_area p.mid_con span{color: #00abcd; font-size: 1.3rem; font-weight: 500;}
+
+#content .content_area .ceo_txt img{width: 60%; margin: 0 20%;} 
+
+#content .content_area .duty ul{text-align: center;}
+#content .content_area .duty ul li{text-align: center; box-sizing: border-box; width: 20%; margin: 5%; display: inline-block;}
+#content .content_area .duty ul li img{width: 50%; margin-bottom: 10px;}
+#content .content_area .duty ul li dt{font-size: 1.4rem; font-weight: 500; margin-bottom: 5px; color: #00abcd;}
+#content .content_area .duty ul li dd{font-size: 1.2rem;}
+#content .content_area .duty p.mid_con::before{content: none;}

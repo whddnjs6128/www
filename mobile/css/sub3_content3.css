@@ -1,0 +1,23 @@
+/* 연구개발 -연구성과 */
+.wrap .visual{background: url(../images/sub3/visual.png)no-repeat center;background-size: cover;}
+
+
+#content .content_area .top_textbox{margin-top: 30px; width:100%; height: 300px;}
+#content .content_area .top_textbox p{text-align: center; font-size: 1.5rem; font-weight: 400; color: #fff; position: relative; top: 50%; transform: translateY(-50%);}
+#content .content_area .top_textbox span{display: block; font-size: 1.8rem; font-weight: 500; }
+
+#content .content_area .result .top_textbox{background: url(../images/sub3/result.png) no-repeat center; background-size: cover;}
+
+
+#content .content_area{margin-bottom: 100px;}
+
+#content .content_area h3{margin-top: 50px; }
+#content .content_area ul{margin: 0 5%;}
+#content .content_area ul li{margin-top: 50px;}
+#content .content_area h4{font-size: 1.5rem;font-weight: 700; border-bottom: 1px solid #ccc; margin-bottom: 30px; position: relative; padding-bottom: 10px;}
+#content .content_area h4::before{content: ''; position: absolute; bottom: -1px; left: 0; width: 170px; height: 3px; background: #00abcd;}
+#content .content_area dl{overflow: hidden; font-size: 1.2rem;}
+#content .content_area dl dt{float: left;color: #05606c; font-weight: 700; width: 90px;}
+#content .content_area dl dd{margin-left: 90px;margin-bottom: 20px;position: relative;}
+#content .content_area ul li dl:last-of-type dd:last-of-type{margin-bottom: 0px;}
+#content .content_area dl dd::before{content: '•'; color: #ccc;position: absolute; left: -20px; transform: scale(.8);}

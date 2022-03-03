@@ -1,0 +1,41 @@
+/* 정도경영 csr  */
+
+.wrap .visual{background: url(../images/sub4/visual.png)no-repeat center;background-size: cover;}
+
+/* swiper subnav */
+#content .title_area .sub_nav{text-align: center; margin: 40px 0 ; border-bottom: 1px solid #ccc;}
+#content .title_area .sub_nav a{font-size: 1.3rem;padding: 1rem 1rem; display: inline-block; position: relative; width: 120px;}
+#content .title_area .sub_nav a.current{color: #00abcd; font-weight: 700;}
+#content .title_area .sub_nav a.current::before{content: ''; display: block; width: 100%; height: 3px; background: #00abcd; position: absolute; left: 0; bottom: -2px;}
+
+
+#content .content_area .csr_info{margin-bottom: 50px;}
+
+#content .content_area .csr_info p.mid_con{text-align: center; padding:30px 5%; font-size: 1.2rem;position: relative; line-height: 2rem;}
+#content .content_area .csr_info p.mid_con:first-of-type:before{content: ''; display: block; width: 80%; height: 1px; background: #ccc; position: absolute; bottom: 0; margin-left: 10%;}
+#content .content_area .csr_info p.mid_con span{color: #00abcd; font-size: 1.3rem; font-weight: 500;}
+
+#content .content_area .csr_info .top_textbox{margin-top: 30px; width:100%; height: 300px; background: url(../images/sub4/csr_visual.png) no-repeat center; background-size: cover;}
+#content .content_area .csr_info .top_textbox p{text-align: center; font-size: 1.5rem; font-weight: 400; color: #fff; position: relative; top: 50%; transform: translateY(-50%);}
+#content .content_area .csr_info .top_textbox span{display: block; font-size: 1.8rem; font-weight: 500; }
+
+
+#content .content_area .csr_info ul{text-align: center; overflow: hidden; }
+#content .content_area .csr_info ul li i{font-size: 3rem;}
+#content .content_area .csr_info ul li{width: 40%; margin: 5%; float: left;}
+#content .content_area .csr_info ul li img{width: 50%; margin-bottom: 10px;}
+#content .content_area .csr_info ul li dt{font-size: 1.4rem; font-weight: 500; margin-bottom: 5px; color: #00abcd;}
+#content .content_area .csr_info ul li dd{font-size: 1.2rem;}
+
+
+#content .content_area .csr_act ul li{padding: 50px 5%;}
+#content .content_area .csr_act ul li:first-of-type{padding-top: 0;}
+#content .content_area .csr_act ul li img{width: 100%; border-radius: 50px 10px;}
+#content .content_area .csr_act ul li:nth-of-type(2n){background: #f6f6f6;}
+
+#content .content_area .csr_act dl{padding: 30px 5%;}
+#content .content_area .csr_act dl dt{font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; color: #00abcd;}
+#content .content_area .csr_act dl dd{font-size: 1.2rem; line-height: 2rem; text-align: justify;}
+#content .content_area .csr_act dl dd:first-of-type{font-weight: 700; margin-bottom: 1.5rem;}
+
+.swiper-wrapper{padding-top: 10px;}

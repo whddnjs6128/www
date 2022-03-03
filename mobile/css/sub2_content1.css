@@ -1,0 +1,42 @@
+/* 사업분야 사업소개 */
+.wrap .visual{background: url(../images/sub2/visual.png)no-repeat center;background-size: cover;}
+
+
+/* swiper subnav */
+#content .title_area .sub_nav{text-align: center; margin: 40px 0 ; border-bottom: 1px solid #ccc;}
+#content .title_area .sub_nav a{font-size: 1.3rem;padding: 1rem 1rem; display: inline-block; position: relative; width: 120px;}
+#content .title_area .sub_nav a.current{color: #00abcd; font-weight: 700;}
+#content .title_area .sub_nav a.current::before{content: ''; display: block; width: 100%; height: 3px; background: #00abcd; position: absolute; left: 0; bottom: -2px;}
+
+
+
+#content .content_area p.mid_con{text-align: center; padding:30px 0; font-size: 1.2rem;position: relative;}
+#content .content_area p.mid_con::before{content: ''; display: block; width: 80%; height: 1px; background: #ccc; position: absolute; bottom: 0; margin-left: 10%;}
+
+#content .content_area .top_textbox{margin-top: 30px; width:100%; height: 360px;}
+#content .content_area .top_textbox p{text-align: center; font-size: 1.5rem; font-weight: 400; color: #fff; padding-top: 145px;}
+#content .content_area .top_textbox span{display: block; font-size: 1.8rem; font-weight: 500; }
+
+
+#content .content_area .medical_equip .top_textbox{background: url(../images/sub2/equip.png) no-repeat center; background-size: cover;}
+#content .content_area .medical_diagnosis .top_textbox{background: url(../images/sub2/diagnosis.png) no-repeat center; background-size: cover;}
+
+#content .content_area .medical{margin-top: 50px; margin-bottom: 50px;}
+#content .content_area .medical:first-of-type{margin-top: 80px;}
+
+#content .content_area .medical img{width: 90%; margin: 0 5%;}
+#content .content_area .medical dl{padding: 30px 5%;}
+#content .content_area .medical dl dt{font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; color: #00abcd;}
+#content .content_area .medical dl dd{font-size: 1.2rem; line-height: 2rem; text-align: justify;}
+#content .content_area .medical dl dd:first-of-type{font-weight: 700; margin-bottom: 1.5rem;}
+
+
+#content .content_area .prize table{width: 90%; margin:0 5%; border-collapse: collapse; border-spacing: 0;}
+#content .content_area .prize thead tr th{border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; border-top: 1px solid #333; padding: 20px; background: #f7f7f7; width: 33.33%;}
+#content .content_area .prize thead tr th:last-of-type{border-right: none;}
+#content .content_area .prize tbody tr th{border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;padding: 20px; font-weight: 400;}
+#content .content_area .prize tbody tr td{border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 20px;}
+#content .content_area .prize tbody tr td:last-of-type{border-right: none;}
+#content .content_area .prize{margin-top: 0;}
+#content .content_area .prize dl{padding-top: 0;}
+.swiper-wrapper{padding-top: 10px;}
