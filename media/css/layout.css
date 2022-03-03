@@ -1,0 +1,196 @@
+/* 와이드 pc  */
+
+	
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+#videoBG {
+   position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100; /*다른요소보다 아래에 위치*/
+  
+}
+
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+   display:none
+}
+
+	
+
+
+
+/* 스토리 */
+#content .story{background: center no-repeat; background-image:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(../images/story_back.jpg) ; background-size: cover; width: 100%; padding: 100px 0 50px 0; position: relative; }
+
+#content .story .story_txt{  margin-left: 45%; width:45%;border:5px solid #000;box-shadow:5px 5px 0 #000;transform:skew(-5deg);background: #dce44b; text-align: right; background-image: radial-gradient(#dc8a47 12%, transparent 0), radial-gradient(#dc8a47 12%, transparent 0); background-size: 20px 20px; background-position: 0 0, 10px 10px;}
+#content .story .story_txt h3{ font-size: 40px; font-family: Bangers;letter-spacing: 3px; text-align: center; margin-top: 50px; margin-bottom: 30px;}
+#content .story .story_txt p{text-align: justify;transform:skew(5deg); margin: 0 5% 30px; font-weight: 500;}
+#content .story .story_txt a{margin-bottom: 50px;font-family: Bangers;letter-spacing: 3px; text-align: right; display: inline-block; font-size: 20px; margin-right: 5%; transition: all .5s;}
+#content .story .story_txt a:hover{transform: scale(1.2) skew(-10deg);}
+#content .story .story_txt p span{font-size: 20px; font-weight: 900; font-style: italic;}
+
+#content .story .story_bottom{display: flex; justify-content: space-evenly; margin-top: 50px; }
+#content .story .story_bottom>div{width:250px;height:180px;border: 2px solid black; border-color: black; border-width: 3px 3px 5px 5px; border-radius:4% 95% 6% 95%/95% 4% 92% 5%; transform: rotate(-2deg); filter: grayscale(1); transition: all .5s;}
+#content .story .story_bottom>div:hover{filter: none;}
+#content .story .story_bottom>div:first-of-type{background:url(../images/bite.jpg) no-repeat center; background-size: cover;}
+#content .story .story_bottom>div:nth-of-type(2){background:url(../images/strange.jpg) no-repeat center; background-size: cover;}
+#content .story .story_bottom>div:nth-of-type(3){background:url(../images/power.jpg) no-repeat center; background-size: cover;}
+
+#content .story .story_bottom div .evenboxinner{transform: rotate(2deg);margin:15px;padding:0 10px;float:right;background:#ddd;border:1px solid #222;box-shadow:3px 3px 0 #222;font-size: 20px;font-family: Bangers;letter-spacing: 3px; display: none;}
+#content .story .story_bottom>div:hover .evenboxinner{display: block;}
+
+
+
+/* 캐릭터 */
+#content .character{background: center no-repeat; background-image:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(../images/character_back.jpg) ; background-size: cover; width: 100%; padding: 100px 0; position: relative; }
+#content .character .chara_inner{overflow: hidden; padding-top: 30px;}
+#content .character .chara_inner .sub_nav{float: left;width: 40%;margin-left:5%; }
+#content .character .chara_inner .sub_nav ul {display: flex;  flex-wrap: wrap; gap: 20px;}
+#content .character .chara_inner .sub_nav li{width: 45%;}
+#content .character .chara_inner .sub_nav li a img{width: 100%; filter: grayscale(1); border: 2px solid black; border-color: black; border-width: 3px 3px 5px 5px; border-radius:4% 95% 6% 95%/95% 4% 92% 5%; transform: rotate(-2deg);transition: all .5s; box-shadow:3px 3px 0 #222}
+#content .character .chara_inner .sub_nav li:hover a img{filter: none;}
+#content .character .chara_inner .sub_nav li a.current img{filter: none;}
+
+#content .character .chara_inner .contlist{float: right; width: 45%; margin-right:3%; display: none;}
+#content .character .chara_inner .miles{display: block;}
+#content .character .chara_inner .contlist .name{font-size: 80px;font-family: Bangers;letter-spacing: 3px; color: #fff;  position: relative; z-index: 1;}
+#content .character .chara_inner .contlist .name::before{content: '';font-size: 80px;font-family: Bangers;letter-spacing: 3px; position:absolute; left: -2px; top: -2px; color: #0f0; z-index: -1;}
+#content .character .chara_inner .contlist .name::after{content: '';font-size: 80px;font-family: Bangers;letter-spacing: 3px; position:absolute; left: 2px; top: 2px; color: #f00; z-index: -1;}
+
+#content .character .chara_inner .contlist .chara_info{width: 95%;border:5px solid #000;box-shadow:-5px 5px 0 #000;transform:skew(5deg);background: #dce44b; text-align: right; font-weight: 500; position: relative; background-image: radial-gradient(#dc8a47 12%, transparent 0), radial-gradient(#dc8a47 12%, transparent 0); background-size: 20px 20px; background-position: 0 0, 10px 10px;}
+#content .character .chara_inner .contlist .chara_info p{transform:skew(-5deg);margin: 5%; text-align: justify;}
+#content .character .chara_inner .contlist .chara_info a{margin-bottom: 5%;font-family: Bangers;letter-spacing: 3px; text-align: right; display: inline-block; font-size: 20px; margin-right: 5%; transition: all .5s;}
+#content .character .chara_inner .contlist .chara_info a:hover{transform: scale(1.2) skew(-10deg);}
+
+#content .character .chara_inner .contlist.miles .name::before{content: 'Miles Morales';}
+#content .character .chara_inner .contlist.miles .name::after{content: 'Miles Morales';}
+#content .character .chara_inner .contlist.miles .chara_info::after{content: '';display: block; width: 160px; height: 228px; background: url(../images/miles_symbol.png) no-repeat center; background-size: cover; position: absolute; right: 20px; top: 30px; z-index: -1;}
+
+#content .character .chara_inner .contlist.gwen .name::before{content: 'Gwen Stacy';}
+#content .character .chara_inner .contlist.gwen .name::after{content: 'Gwen Stacy';}
+#content .character .chara_inner .contlist.gwen .chara_info::after{content: '';display: block; width: 160px; height: 160px; background: url(../images/gwen_symbol.png) no-repeat center; background-size: cover; position: absolute; right: 20px; top: 30px; z-index: -1;}
+
+#content .character .chara_inner .contlist.peter .name::before{content: 'Peter B Parker';}
+#content .character .chara_inner .contlist.peter .name::after{content: 'Peter B Parker';}
+#content .character .chara_inner .contlist.peter .chara_info::after{content: '';display: block; width: 160px; height: 228px; background: url(../images/peter_symbol.png) no-repeat center; background-size: cover; position: absolute; right: 20px; top: 30px; z-index: -1; filter: opacity(.9);}
+
+#content .character .chara_inner .contlist.dad .name::before{content: 'Jefferson Davis';}
+#content .character .chara_inner .contlist.dad .name::after{content: 'Jefferson Davis';}
+
+/* 트레일러 */
+#content .trailer{background: center no-repeat; background-image:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(../images/trailer_back.jpg) ; background-size: cover; width: 100%; padding: 100px 0 50px 0; position: relative;}
+#content .trailer .trailer_inner{overflow: hidden; padding: 50px 0;}
+#content .trailer .trailer_inner a{display: block; text-align: center;}
+#content .trailer .trailer_inner a:hover .img img{transform: scale(1.1);}
+#content .trailer .trailer_inner .trailer_info{display: inline-block;padding: 0 10px;margin-top: 20px;border:5px solid #000;box-shadow:5px 5px 0 #000;background: #dce44b; text-align: center; font-weight: 500;background-image: radial-gradient(#dc8a47 12%, transparent 0), radial-gradient(#dc8a47 12%, transparent 0); background-size: 20px 20px; background-position: 0 0, 10px 10px;}
+#content .trailer .trailer_inner .trailer_info p{font-family: Bangers;letter-spacing: 3px; font-weight: 500;}
+#content .trailer .trailer_left{float:left;width: 50%; margin-left: 5%; margin-top: 100px;perspective:800px}
+#content .trailer .trailer_left a{transform:translateZ(0) rotateY(15deg);}
+
+#content .trailer .trailer_right{float:right;width: 30%; margin-right: 5%;perspective:800px}
+#content .trailer .trailer_right a:first-of-type{margin-bottom: 50px;}
+#content .trailer .trailer_right a{transform:translateZ(0) rotateY(-15deg);}
+#content .trailer .img{border: 5px solid #000; box-shadow: 5px 5px #000; overflow: hidden;position: relative;}
+#content .trailer .img img{width: 100%; transition: all .5s;}
+#content .trailer .img::before{content: '';position: absolute; display: block; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100px; height: 100px; background: url(../images/play.png) center no-repeat; background-size: cover; } 
+
+/* 갤러리 */
+#content .gallery{padding: 100px 0 150px 0; background: rgba(0, 0, 0, 0.6);}
+#content .gallery .gallery_txt{margin: 30px 0 50px 10%; width:60%;display: block;padding: 20px;border:5px solid #000;box-shadow:5px 5px 0 #000;background: #dce44b; text-align: center; font-weight: 500;background-image: radial-gradient(#dc8a47 12%, transparent 0), radial-gradient(#dc8a47 12%, transparent 0); background-size: 20px 20px; background-position: 0 0, 10px 10px;}
+#content .gallery .gallery_txt span{font-family: Bangers;letter-spacing: 3px; font-weight: 500; font-size: 30px;}
+.swiper {
+   width: 20%;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   margin: auto;
+ }
+
+ .swiper-slide {
+   background-position: center;
+   background-size: cover;
+   border: 5px solid #000;
+   box-shadow: 5px 5px #000;
+
+ }
+
+ .swiper-slide img {
+   display: block;
+   width: 100%;
+ }
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	#content .story .story_txt{width: 50%;}
+  #content .character{height: 750px; padding-bottom: 0;}
+  
+  .swiper{width: 40%;}
+
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+	#content .story .story_txt{width: 60%;margin-left: 35%;}
+	#content .story .story_bottom .box3{display: none;}
+
+  #content .character{height: 779px;}
+  #content .character .chara_inner .sub_nav{float: none; width: 90%;}
+  #content .character .chara_inner .sub_nav ul{ flex-wrap: nowrap;}
+  #content .character .chara_inner .contlist{float: none; width: 80%; margin-right: 10%; margin-left: 10%;}
+
+  #content .trailer .trailer_right a:nth-of-type(2){display: none;}
+  #content .trailer .trailer_right a:first-of-type{margin-bottom: 0;}
+  #content .trailer .trailer_right{width: 40%; margin-top: 130px;}
+
+  #content .gallery .gallery_txt {width: 70%;}
+
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+  #content .story .story_txt{margin: 10% 5% 5%; width: auto; }
+  #content .character{height: 1238px;}
+  #content .character .chara_inner .sub_nav ul{ flex-wrap: wrap;}
+
+  .swiper{width: 50%;}
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  #content .story .story_txt{margin-top: 50%; transform:skew(-3deg)}
+  #content .story .story_bottom .box1{margin-bottom: 30px;}
+  #content .story .story_bottom{flex-direction: column; align-items: center;}
+  #content .story .story_txt h3{margin-top: 30px;}
+  #content .story .story_txt a{margin-bottom: 30px;}
+
+  #content .character{height: 1147px;}
+  #content .character .chara_inner .contlist .chara_info{transform: skew(3deg); font-size: 16px;}
+  
+
+  #content .trailer .trailer_left{float: none; width: 80%; margin-left: 14%;}
+  #content .trailer .trailer_right{float: none; margin-left: 10%; width: 80%;}
+	
+  .swiper{width: 60%;}
+
+}
+
+
+

@@ -1,0 +1,72 @@
+
+
+
+/* 트레일러 */
+
+#content .con_box{background: center no-repeat; background-image:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(../images/sub3/ost_back.jpg) ; background-size: cover; width: 100%; padding: 100px 0 50px 0; position: relative;}
+#content .trailer{background-image:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(../images/sub3/trailer_back.jpg) ; }
+#content .con_box .inner{overflow: hidden; padding: 50px 0;}
+#content .con_box .inner a{display: block; text-align: center;}
+#content .con_box .inner .info{display: inline-block;padding: 10px 20px;margin-top: 20px;border:5px solid #000;box-shadow:5px 5px 0 #000;background: #dce44b; text-align: center; font-weight: 500;background-image: radial-gradient(#dc8a47 12%, transparent 0), radial-gradient(#dc8a47 12%, transparent 0); background-size: 20px 20px; background-position: 0 0, 10px 10px;}
+#content .con_box .inner .info p{font-family: Bangers;letter-spacing: 3px; font-weight: 500;}
+
+#content .con_box .img{border: 5px solid #000; box-shadow: 5px 5px #000; overflow: hidden;position: relative;  }
+#content .con_box .img img{width: 100%; transition: all .5s; }
+#content .con_box .img::before{content: '';position: absolute; display: block; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100px; height: 100px; background: url(../images/play.png) center no-repeat; background-size: cover; filter: grayscale(1); } 
+
+#content .con_box .inner a:hover .img img{transform: scale(1.1);}
+#content .con_box .inner a:hover .img::after{content: '';position: absolute; display: block; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 120px; height: 120px; background: url(../images/play.png) center no-repeat; background-size: cover; } 
+
+#content .con_box .trailer_left{float: left; width: 30%; margin-left: 5%; perspective:800px}
+#content .con_box .trailer_left a:first-of-type{margin-bottom: 50px;}
+#content .con_box .trailer_left a{transform:translateZ(0) rotateY(15deg);}
+
+#content .con_box .trailer_right{float: right; width: 50%; margin-right: 5%; margin-top: 100px; perspective: 800px;}
+#content .con_box .trailer_right a{transform:translateZ(0) rotateY(-15deg);}
+
+
+#content .con_box .ost_left{float:left;width: 50%; margin-left: 5%; margin-top: 100px;perspective:800px}
+#content .con_box .ost_left a{transform:translateZ(0) rotateY(15deg);}
+
+#content .con_box .ost_right{float:right;width: 30%; margin-right: 5%;perspective:800px}
+#content .con_box .ost_right a:first-of-type{margin-bottom: 50px;}
+#content .con_box .ost_right a{transform:translateZ(0) rotateY(-15deg);}
+
+
+
+#content .con_box .ost_txt{margin: 30px auto 100px; width:80%;display: block;padding: 20px;border:5px solid #000;box-shadow:5px 5px 0 #000;background: #dce44b; text-align: justify; font-weight: 500;background-image: radial-gradient(#dc8a47 12%, transparent 0), radial-gradient(#dc8a47 12%, transparent 0); background-size: 20px 20px; background-position: 0 0, 10px 10px;}
+#content .con_box .ost_txt span{ font-weight: 700; font-size: 18px; font-style: italic;}
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+
+
+    #content .ost .ost_right a:nth-of-type(2),#content .con_box .trailer_left a:nth-of-type(2){display: none;}
+    #content .ost .ost_right a:first-of-type, #content .con_box .trailer_left a:first-of-type{margin-bottom: 0;}
+    #content .ost .ost_right, #content .con_box .trailer_left{width: 40%; margin-top: 130px;}
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+    #content .ost .ost_left,#content .con_box .trailer_right{float: none; width: 80%; margin-left: 10%;}
+    #content .ost .ost_right,#content .con_box .trailer_left{float: none; margin-left: 10%; width: 80%;}
+}

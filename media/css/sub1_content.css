@@ -1,0 +1,88 @@
+/* .videoBox h2::before{content: 'story';}
+.videoBox h2::after{content: 'story';} */
+
+
+
+#content .synopsis{text-align: center; padding: 100px 0; background: rgba(0,0,0,.6);position: relative;}
+#content .synopsis::before{content: ''; width: 500px; height: 713px; display: block; position: absolute; background: url(../images/sub1/synop_back.png)no-repeat center; background-size: cover; transform: rotate(-20deg); top: -40%; right: 50%; z-index: -1;}
+#content .synopsis .evenboxinner_title{margin-bottom: 50px;}
+#content .synopsis .synopsis_info{display: block;width: 80%;margin: 0 auto;padding: 5%;border:5px solid #000;box-shadow:5px 5px 0 #000;transform:skew(-5deg);background: #dce44b;  background-image: radial-gradient(#dc8a47 12%, transparent 0), radial-gradient(#dc8a47 12%, transparent 0); background-size: 20px 20px; background-position: 0 0, 10px 10px; transition: all .3s; text-align: justify;}
+#content .synopsis .synopsis_info:hover{transform:skew(-5deg) rotate(3deg);}
+#content .synopsis .synopsis_info p{font-weight: 500;}
+
+
+#content .plot{padding: 100px 0; background: center no-repeat; background-size: cover;}
+
+#content .plot .evenboxinner_title{margin-bottom: 50px;}
+#content .plot .plot_inner{padding: 0 5%; display: flex; align-items: center; justify-content: space-between;}
+#content .plot .plot_info{display: block;padding: 5%;border:5px solid #000;box-shadow:5px 5px 0 #000;transform:skew(-2deg);background: #dce44b;  background-image: radial-gradient(#dc8a47 12%, transparent 0), radial-gradient(#dc8a47 12%, transparent 0); background-size: 20px 20px; background-position: 0 0, 10px 10px;box-sizing: border-box;}
+
+
+#content .plot .plot_inner ul{display: flex; flex-wrap: wrap; justify-content: space-between; flex-basis: 45%;}
+#content .plot .plot_inner ul li{ box-sizing: border-box;margin-bottom: 20px; padding-bottom: 7px;overflow: hidden; padding-right: 8px;}
+#content .plot01{background-image:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(../images/sub1/plot1_back.jpg) ;}
+#content .plot01 .plot_inner ul li:nth-of-type(1){flex-basis: 55%;}
+#content .plot01 .plot_inner ul li:nth-of-type(2){flex-basis: 40%;}
+#content .plot01 .plot_inner ul li:nth-of-type(3){flex-basis: 30%;}
+#content .plot01 .plot_inner ul li:nth-of-type(4){flex-basis: 65%;}
+
+
+
+#content .plot .plot_inner ul li img{width: 100%; border: 2px solid #fff; border-color: #fff; border-width: 3px 3px 5px 5px; border-radius:4% 95% 6% 95%/95% 4% 92% 5%; transform: rotate(-2deg); transition: all .3s; height: 100%; object-fit:cover}
+#content .plot .plot_inner ul li:first-of-type img, #content .plot .plot_inner ul li:nth-of-type(4) img{transform:rotate(2deg); border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;}
+#content .plot .plot_inner ul li:hover img{transform: scale(1.1);}
+#content .plot .plot_inner .plot_info{font-weight: 500; flex-basis: 50%; text-align: justify;}
+#content .plot02{background-image:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(../images/sub1/plot2_back.jpg);}
+#content .plot02 .plot_inner ul li:nth-of-type(1){flex-basis: 70%;}
+#content .plot02 .plot_inner ul li:nth-of-type(2){flex-basis: 48%;}
+#content .plot02 .plot_inner ul li:nth-of-type(3){flex-basis: 48%;}
+
+
+#content .more{padding: 150px 0;}
+#content .more .more_txt{margin: 0 auto; width:60%;display: block;padding: 20px;border:5px solid #000;box-shadow:5px 5px 0 #000;background: #dce44b; text-align: center; font-weight: 500;background-image: radial-gradient(#dc8a47 12%, transparent 0), radial-gradient(#dc8a47 12%, transparent 0); background-size: 20px 20px; background-position: 0 0, 10px 10px;}
+#content .more .more_txt span{font-family: Bangers;letter-spacing: 3px; font-weight: 500; font-size: 30px;}
+#content .more .more_txt:hover{transform:rotate(3deg); transition: all .3s;}
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    #content .plot01 .plot_inner ul li:nth-of-type(1){display: none;}
+    #content .plot01 .plot_inner ul li:nth-of-type(2){display: none;}
+    #content .plot01 .plot_inner ul li:nth-of-type(3){flex-basis: 100%;}
+    #content .plot01 .plot_inner ul li:nth-of-type(4){flex-basis: 100%;}
+
+    #content .plot02 .plot_inner ul li:nth-of-type(1){flex-basis: 100%;}
+    #content .plot02 .plot_inner ul li:nth-of-type(2){display: none;}
+    #content .plot02 .plot_inner ul li:nth-of-type(3){flex-basis: 100%;}
+}
+
+
+
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    #content .synopsis .synopsis_info{width: 70%;}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+    #content .plot01 .plot_inner {flex-direction: column;}
+    #content .plot01 .plot_inner ul{width: 80%;}
+    #content .plot01 .plot_inner ul li:nth-of-type(1){display: block;}
+    #content .plot01 .plot_inner ul li:nth-of-type(2){display: block;}
+    #content .plot01 .plot_inner ul li:nth-of-type(3){flex-basis: 30%;}
+    #content .plot01 .plot_inner ul li:nth-of-type(4){flex-basis: 65%;}
+
+    #content .plot02{background: right no-repeat; background-size: cover; background-image:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(../images/sub1/plot2_back.jpg);}
+
+    #content .plot02 .plot_inner{flex-direction: column; gap: 20px;}
+    #content .plot02 .plot_inner ul li:nth-of-type(1){flex-basis: 45%; }
+    #content .plot02 .plot_inner ul li:nth-of-type(2){display: block;flex-basis: 45%;}
+    #content .plot02 .plot_inner ul li:nth-of-type(3){flex-basis: 80%; margin: 0 auto;}
+}
