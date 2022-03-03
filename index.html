@@ -1,0 +1,356 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST동아</title>
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./common/css/common.css">
+    <link rel="stylesheet" href="./maincss/main.css">
+    
+
+    <script src="./common/js/prefixfree.min.js"></script>
+    <script src="./mainjs/mainpopup.js"></script>
+    <script>
+
+        function check_search()
+         {
+            if (!document.board_form.search.value)
+            {
+                alert("검색어를 입력하세요!");    
+                document.board_form.search.focus();
+                return;
+            }
+            document.board_form.submit();
+         }
+      </script>
+
+
+
+</head>
+<body>
+        <? include "./common/main_header.html"?>
+        <div class="visual">
+            <div class="gallery">
+                     <ul>
+                          <li class="link1"><a href="#"><img src="images/a1.jpg" alt='비주얼1' ><span>혁신적인 의약품으로 존경받는<br>세계적 수준의 제약기업, <strong>동아ST</strong>의 미래입니다.</span></a></li>
+                          <li class="link2"><a href="#"><img src="images/a2.jpg" alt='비주얼2' ><span><strong>동아ST</strong>는 인류의 건강 증진을 위해 <br>항상 노력하겠습니다.</span></a></li>
+                          <li class="link3"><a href="#"><img src="images/a3.jpg" alt='비주얼3' ><span>밝고 따뜻한 사회를 만들기 위해<br>기업의 <strong>사회적 책임</strong>을 다하겠습니다.</span></a></li>
+                          <li class="link4"><a href="#"><img src="images/a4.jpg" alt='비주얼4' ><span>글로벌 제약기업을 향해 도약하는<br><strong>동아ST</strong>입니다.</span></a></li>
+                          <li class="link5"><a href="#"><img src="images/a5.jpg" alt='비주얼5' ><span>고객을 먼저 생각하는 기업<br><strong>동아ST</strong>입니다.</span></a></li>
+                    </ul>
+             </div>
+           
+             <div class="dock">
+              	<span class="mbutton  btn1" ></span>
+              	<span class="mbutton  btn2" ></span>
+             	<span class="mbutton  btn3" ></span>
+              	<span class="mbutton  btn4" ></span>
+              	<span class="mbutton  btn5" ></span>
+              	<span class="ps" ></span>
+            </div>
+            <span class="btn btnLeft"><i class="fas fa-chevron-left"></i></span>
+            <span class="btn btnRight"><i class="fas fa-chevron-right"></i></span>
+     	</div> 
+
+
+        <article id="content">
+            <h2 class="hidden">본문컨텐츠영역</h2>
+
+            <div class="search">
+                <div class="search_inner">
+                    <h3>원하시는 제품을 검색해보세요.</h3>
+                    <dl> 
+                        <dt>추천제품 :</dt> 
+                        <dd><a href="./product/view.php?table=product&num=10&page=1">#비리얼</a></dd>
+                        <dd><a href="./product/view.php?table=product&num=3&page=2">#주블리아</a></dd>
+                        <dd><a href="./product/view.php?table=product&num=9&page=1">#슈가메트</a></dd>
+                    </dl>
+                    
+                    <form name="board_form" method="post" action="./product/list.php?table=product&mode=search&find=subject">
+                        <div class="search_box">
+                            <!-- <label class="hidden" for="find">상품명</label>
+                            <input type="hidden" id="find" name="find" value="subject"> -->
+
+                            <label class="hidden" for="search">상품검색어입력</label>
+                            <input type="text" name="search" id="search" placeholder="상품명을 검색하세요">
+                            
+                            <a onclick="check_search()" class="search_form">
+                                <i class="fas fa-search"></i><span class="hidden">검색버튼</span>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="new_product">
+                <div class="slide_title">
+                    <h3>신제품</h3>
+                    <p>혁신적 의약품 생산기업, 동아ST만의 신제품을 소개합니다.</p>
+                </div>
+
+
+                <div class="product_btn">
+                    <a href="#left" class="m2 button"><i class="fas fa-chevron-left"></i><span class="hidden">제품슬라이드 왼쪽제품보기</span></a>
+                    <a href="#right" class="m1 button"><i class="fas fa-chevron-right"></i><span class="hidden">제품슬라이드 오른쪽제품보기</span></a>
+                </div>
+                <div class="slide_gallery_box">
+                    <div class="product_slide">
+                        <ul>
+                            <li>
+                                <a href="./product/view.php?table=product&num=8&page=1">
+                                    <img src="./images/product01.jpg" alt="스티렌 투엑스">
+                                    <dl>
+                                        <dt>스티렌 투엑스</dt>
+                                        <dd>#급성위염</dd>
+                                        <dd>#만성위염</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./product/view.php?table=product&num=9&page=1">
+                                    <img src="./images/product02.jpg" alt="슈가메트">
+                                    <dl>
+                                        <dt>슈가메트</dt>
+                                        <dd>#당뇨</dd>
+                                        <dd>#혈당조절</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./product/view.php?table=product&num=10&page=1">
+                                    <img src="./images/product03.jpg" alt="비리얼">
+                                    <dl>
+                                        <dt>비리얼</dt>
+                                        <dd>#B형간염</dd>
+                                        <dd>#HIV-1</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./product/view.php?table=product&num=15&page=1">
+                                    <img src="./images/product04.jpg" alt="가스터">
+                                    <dl>
+                                        <dt>가스터</dt>
+                                        <dd>#소화기계</dd>
+                                        <dd>#궤양</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./product/view.php?table=product&num=2&page=2">
+                                    <img src="./images/product05.jpg" alt="이달비 클로">
+                                    <dl>
+                                        <dt>이달비 클로</dt>
+                                        <dd>#순환기계</dd>
+                                        <dd>#고혈압</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./product/view.php?table=product&num=3&page=2">
+                                    <img src="./images/product06.jpg" alt="주블리아">
+                                    <dl>
+                                        <dt>주블리아</dt>
+                                        <dd>#피부질환</dd>
+                                        <dd>#진균증</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                    
+                        </ul>
+                    </div>
+                </div>
+ 
+
+
+            </div>
+
+            <div class="introduction">
+                <div class="slide_title">
+                    <h3>회사소개</h3>
+                    <p>글로벌 제약기업을 향해 도약하는 동아ST입니다.</p>
+                </div>
+
+                <ul>
+                    <li class="about">
+                        <img src="./images/about.jpg" alt="회사소개">
+                        <dl>
+                            <dt>About Dong-A ST</dt>
+                            <dd>국내를 넘어 세계적인 제약기업으로<br>자리매김해 나가는 동아ST입니다.</dd>
+                            <dd><a href="./sub1/sub1_1.html">View More <i class="fas fa-arrow-right"></i> </a></dd>
+                        </dl>
+                    </li>
+
+                    <li class="rd">
+                        <dl>
+                            <dt>R&D</dt>
+                            <dd>글로벌시장의 도약을 위한<br>연구본부는 늘 새롭습니다.</dd>
+                            <dd><a href="./sub3/sub3_1.html">View More <i class="fas fa-arrow-right"></i> </a></dd>
+                        </dl>
+                        <img src="./images/rd.jpg" alt="r&d">
+                    </li>
+
+                    <li class="history">
+                        <img src="./images/history.jpg" alt="연혁">
+                        <dl>
+                            <dt>History</dt>
+                            <dd>동아ST는 인류의 건강을 위해<br>힘차게 뛰고 있습니다.</dd>
+                            <dd><a href="./sub1/sub1_3.html">View More <i class="fas fa-arrow-right"></i> </a></dd>
+                        </dl>
+                    </li>
+                </ul>
+
+
+
+            </div>
+
+            <div class="management">
+                <div class="slide_title">
+                    <h3>정도경영</h3>
+                    <p>밝고 따뜻한 사회를 만들기 위해 기업의 사회적 책임을 다하겠습니다.</p>
+                </div>
+
+                <div class="manage_content">
+
+                    <ul>
+                        <li class="philosophy">
+                            <a href="./sub4/sub4_1.html">
+                                <img src="./images/philosophy.jpg" alt="철학">
+                                <i class="far fa-lightbulb"></i>
+                                <dl>
+                                    <dt>
+                                        철학
+                                    </dt>
+                                    <dd>
+                                        동아 그룹의 정도경영은<br>
+                                        사회책임경영입니다.
+                                    </dd>
+                                    <dd>
+                                        <i class="far fa-arrow-alt-circle-right"></i><span class="hidden">철학더보기</span>
+                                    </dd>
+                                </dl>
+                                
+                            </a>
+                        </li>
+
+                        <li class="ccm">
+                            <a href="./sub4/sub4_2.html">
+                                <img src="./images/ccm.jpg" alt="ccm">
+                                <i class="fas fa-users"></i>
+                                <dl>
+                                    <dt>
+                                        CCM
+                                    </dt>
+                                    <dd>
+                                        언제나 고객님의 편의를<br>
+                                        먼저 생각합니다.
+                                    </dd>
+                                    <dd>
+                                        <i class="far fa-arrow-alt-circle-right"></i><span class="hidden">ccm더보기</span>
+                                    </dd>
+                                </dl>
+                                
+                            </a>
+                        </li>
+
+                        <li class="csr">
+                            <a href="./sub4/sub4_3.html">
+                                <img src="./images/csr.jpg" alt="csr">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <dl>
+                                    <dt>
+                                        CSR
+                                    </dt>
+                                    <dd>
+                                        동아 그룹은 사회적 책임을<br>
+                                        다하는 기업입니다.
+                                    </dd>
+                                    <dd>
+                                        <i class="far fa-arrow-alt-circle-right"></i><span class="hidden">csr더보기</span>
+                                    </dd>
+                                </dl>
+                                
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+            <div class="news">
+                <div class="news_inner">
+                    
+                    <h3>새소식</h3>
+                    <p>동아ST의 최근 소식과 동향을 알려드립니다.</p>
+                    
+                    <div class="news_content">
+
+                            <? include "./lib/func.php"; ?>
+                        <ul>
+                            <? latest_article("concert", 2, 26); ?>
+                        </ul>
+                    </div>
+                    
+                    <div class="more">
+                        <a href="./greet/list.php">View More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="recruit">
+                <div class="opacity_box"></div>
+                <div class="recruit_inner">
+                    <h3>인재상</h3>
+                    <p>
+                        함께 가치를 일구어 나갈 수 있는 인재, 동아ST는 여러분으로 부터 만들어집니다.
+                    </p>
+                    <a class="recruit_btn" href="sub5/sub5_1.html">바로가기</a>
+                </div>
+
+            </div>
+
+        </article>
+
+        
+        <? include "./common/main_footer.html"?>
+
+
+    <!-- 공지사항 팝업 -->
+    <div id="showimage" style="z-index:99;position:absolute;width:322px;right:300px;top:250px;">
+        <script>
+          function closeWin(){
+             var chk = document.getElementById('Notice')
+             if ( chk.checked ) {
+                   setCookie( "Notice", "done" , 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+              }
+          }
+         if ( getCookie( "Notice" ) == "done" ) {
+             hidebox();
+         }
+       </script>
+          <div>
+                <img src="popup/popup01.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다." />
+          </div>
+           <div style="font-size:12px;text-align:center;color:#fff;">
+             <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음.</label>
+           <a href="#"  onclick="closeWin();hidebox();return false;" style="color: #fff;"> [close] </a>
+        </div>
+      </div>
+
+
+      
+</body>
+</html>

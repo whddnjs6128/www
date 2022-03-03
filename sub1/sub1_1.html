@@ -1,0 +1,218 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-기업개요</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content1.css">
+    
+
+    <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+        <? include "../common/sub_header.html" ?>
+    
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="서브페이지_회사소개_비주얼">
+            <h3>회사소개</h3>
+        </div>
+
+
+        <div class="sub_menu">
+            <ul>
+                <li class="current"><a href="./sub1_1.html">기업개요</a></li>
+                <li><a href="./sub1_2.html">CEO인사말</a></li>
+                <li><a href="./sub1_3.html">연혁</a></li>
+                <li><a href="./sub1_4.html">오시는길</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="title_area_inner">
+                    <div class="line_map">
+                        <i class="fas fa-home"></i> &gt; 회사소개 &gt; <strong>기업개요</strong>
+                    </div>
+                    <h2>기업개요</h2>
+                    <p>언제까지나, 함께, 건강하게, <span>동아ST</span>가 만들어 가겠습니다.</p>
+                    
+                    <div class="sub_nav">
+                        <ul>
+                            <li><a href="#" class="current" id= "link1">기업소개</a></li>
+                            <li><a href="#" id="link2">비전</a></li>
+                            <li><a href="#" id="link3">윤리헌장</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_area">
+                <div class="company_intro con1">
+
+                    <h3>기업소개</h3>
+                    <p class="sub_title">글로벌 제약기업을 향해 도약하는 동아ST입니다. </p>
+
+                    <div class="intro_content">
+                        <img src="./images/content1/company_intro.jpg" alt="회사 비주얼 이미지">
+                        
+                        <div class="intro_text">
+                            <dl>
+                                <dt>Dong-A ST</dt>
+                                <dd>동아ST는 자사개발 신약인 스티렌, 자이데나, 모티리톤, 슈가논/슈가메트 등의 전문의약품과 의료기기, 진단과 해외사업에 주력합니다.</dd>
+                                <dd>2011년 완공된 세계적 수준의 최첨단 연구소와 뛰어난 역량의 연구 인력 등 최적의 연구 인프라를 바탕으로
+                                    글로벌 신약 개발에 더욱 매진하고 있습니다.</dd>
+
+                                <dd>또한 그를 토대로 해외 시장을 적극적으로 개척하고 해외 수출을 확대하여 국내를 넘어 <span>세계적인</span> 제약기업으로 자리매김해 나갈 계획입니다.</dd>
+                                    
+                            </dl>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="company_vision con2">
+                    <h3>비전</h3>
+                    <p class="sub_title">글로벌 신약으로 도약하는 Leading Company</p>
+
+                    <div class="vision_top">
+                        <div class="mission circle">
+                            
+                            <img src="./images/content1/mission.jpg" alt="">
+                            <dl>
+                                <dt>Mission</dt>
+                                <dd>인류의 건강과 행복을 위한<br>
+                                    끝없는 도전</dd>
+                            </dl>
+                        </div>
+
+                        <div class="vision circle">
+                            
+                            <img src="./images/content1/vision.jpg" alt="">
+                            <dl>
+                                <dt>Vision</dt>
+                                <dd>차별적 경쟁력 확보를 통한<br>
+                                    Global Healthcare<br>
+                                    Player 도약</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <img src="./common/images/logo.png" alt="동아에스티로고" class="vision_logo">
+
+                    <div class="vision_bottom">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt><i class="fab fa-medapps"></i>혁신 추구</dt>
+                                    <dd>새로운 시각으로<br>
+                                        작은 혁신부터<br>
+                                        시작하자</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><i class="fas fa-exchange-alt"></i>변화주도</dt>
+                                    <dd>흐름을 읽고<br>
+                                        능동적으로<br>
+                                        변화하자</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><i class="far fa-handshake"></i>상호신뢰</dt>
+                                    <dd>신뢰를 통한<br>
+                                        시너지를<br>
+                                        창출하자</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><i class="fas fa-chart-line"></i>함께성장</dt>
+                                    <dd>구성원, 고객,<br>
+                                        사회와 함께<br>
+                                        성장하자</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="company_ethics con3">
+                    <h3>윤리헌장</h3>
+                    <p class="sub_title">동아ST는 정도경영 윤리 규정을 지키며, 실천해 나가겠습니다.</p>
+
+                    <div class="ethics_inner">
+                        <img src="./images/content1/ethics.jpg" alt="윤리헌장 비주얼">
+                        
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>정도경영 실천</dt>
+                                    <dd>정도경영 실천을 위해 정도, 성실, 배려의 창업정신을
+                                        계승하여 올바른 사고로 정정당당하게 행동하며
+                                        인류의 건강과 행복 실현을 위해 최선을 다한다.</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>인간존중 경영</dt>
+                                    <dd>직원 개인의 인격과 다양성을 존중하고 공정한 인사와
+                                        행복을 위한 복지에 최선을 다하여 고객가치 창출의
+                                        원천인 구성원을 가장 중요한 자산으로 여긴다.</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>사회적 책임 이행</dt>
+                                    <dd>각종 법규를 준수하고 다양한 사회공헌 활동을 통해
+                                        기업의 사회적 책임을 다하며 국가경제와
+                                        사회발전 기여에 최선을 다한다.</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>신뢰받는 기업 추구</dt>
+                                    <dd>신뢰와 존경을 받는 기업이 되기 위해 열린 경영을
+                                        지향하여 투명한 경영을 통해 윤리적인 행동과
+                                        공정한 직무 수행에 최선을 다한다.</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>이해관계자 가치 제고</dt>
+                                    <dd>고객사업이 근간임을 명심하고 정직하고 성실한
+                                        지속가능경영을 통해 다양한 이해관계자의 가치
+                                        제고의 증진을 위해 최선을 다한다.</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </article>
+
+
+        <? include "../common/sub_footer.html" ?>
+        <script src="js/slide_move.js"></script>
+        <script src="js/scroll_1_1.js"></script>
+    
+</body>
+</html>

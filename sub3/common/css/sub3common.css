@@ -1,0 +1,38 @@
+/* sub3 공통 - 비주얼/서브네비/타이틀영역 */
+.visual{width: 2000px;position: relative; left: 50%; margin-left: -1000px; top: 0;}
+.visual h3{position: absolute; text-align: center; font-size: 40px; color: #fff;left: 0; top: 245px; width: 100%; font-weight: 400;}
+
+.sub_menu{width: 1200px; margin: 0 auto; position: relative; top: -74px; margin-bottom: -78px;}
+.sub_menu ul{overflow: hidden; width: 1000px; margin: 0 auto;}
+.sub_menu li{float: left; width: 250px; position: relative;}
+.sub_menu li a::after{content:'';display:block; position: absolute; width: 0; height: 5px; bottom: 0; left: 50%; background: #00abcd; margin-left: -100px; transition: all .4s;}
+.sub_menu li a{display: block; font-size: 22px; padding: 21px 0; background: rgba(255, 255, 255, .7); text-align: center; transition: all .1s;}
+.sub_menu li a:hover{background: rgba(255, 255, 255, 1); font-weight: 700;}
+.sub_menu li a:hover::after{width: 200px;}
+.sub_menu .current a{background: rgba(255, 255, 255, 1); font-weight: 700;} 
+.sub_menu .current a::after{width: 200px;}
+
+#content{width: 1200px; margin: 0 auto;}
+#content .title_area{position: relative; padding-top:150px;}
+#content .line_map{position: absolute; right: 0; top: 30px; color: #666;}
+#content .line_map strong{color: #333;}
+#content h2{text-align: center; font-size: 60px; font-weight: 700; margin-bottom: 60px;position: relative;}
+#content h2::after{content: ''; position: absolute; width: 100px; height: 3px; background: #00abcd; display: block; left: 50%; margin-left: -50px; }
+#content .title_area p{font-size: 25px; font-family: 'Nanum Myeongjo'; font-weight: 400; text-align: center;}
+#content .title_area p span{color: #00abcd;}
+
+#content .sub_nav{position: relative;}
+#content .sub_nav ul{overflow: hidden; width: 900px; margin: 0 auto;padding-top: 110px;}
+#content .sub_nav li{float: left; width: 300px; position: relative;}
+#content .sub_nav li a{display: block;font-size: 25px; font-weight: 400;color: #999; text-align: center; transition: all .1s;}
+#content .sub_nav li a::after{content: ''; position: absolute;width: 20px; height: 20px; border-radius: 50%; left: 50%; bottom: 45px;margin-left: -10px; background: #999; z-index: 1; transition: all .1s;}
+
+#content .sub_nav li .current::after{background: #00abcd;}
+#content .sub_nav li:hover a::after{background: #00abcd;}
+
+#content .sub_nav li:hover a{font-weight: 700; color: #00abcd;}
+#content .sub_nav li .current{font-weight: 700; color: #00abcd;}
+
+#content h3{text-align: left; font-size: 40px; font-weight: 700; position: relative; margin-top: 150px;}
+
+

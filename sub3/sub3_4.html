@@ -1,0 +1,202 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연구개발-임상과제</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub3common.css">
+    <link rel="stylesheet" href="./css/sub3_content4.css">
+    
+
+    <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+    
+    <? include "../common/sub_header.html" ?>
+
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="서브페이지_연구개발_비주얼">
+            <h3>연구개발</h3>
+        </div>
+
+
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub3_1.html">연구본부</a></li>
+                <li><a href="./sub3_2.html">연구활동</a></li>
+                <li><a href="./sub3_3.html">연구성과</a></li>
+                <li class="current"><a href="./sub3_4.html">임상과제</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <i class="fas fa-home"></i> &gt; 연구개발 &gt; <strong>임상과제</strong>
+                </div>
+                <h2>임상과제</h2>
+                <p>세계 신약 개발을 위해<span> 동아ST</span>의 도전은 계속됩니다.</p>
+            </div>
+
+            <div class="content_area">
+                <img src="./images/content4/experiment.jpg" alt="임상과제 비주얼">
+
+                <div class="task_con">
+                    <h3>합성 의약품</h3>
+                    <table> 
+                        <thead>
+                        <tr>
+                            <th scope="col">코드명<br>브랜드명</th>
+                            <th scope="col">적응증</th>
+                            <th scope="col">계열</th>
+                            <th scope="col">개발단계</th>
+                            <th scope="col">라이센싱<br>가능여부</th>
+                        </tr>
+                        </thead>
+                        <tbody> 
+                        <tr>
+                            <th scope="row" rowspan="2">DA-7218<br>
+                               (시벡스트로)
+                            </th>
+                            <td>피부 감염 (ABSSSI)</td>
+                            <td rowspan="2">Oxazolidinone <br>계열 항생제</td>
+                            <td>발매  (미국, 유럽)</td>
+                            <td rowspan="2">불가</td>
+                        </tr>
+                        <tr>
+                            <td>폐렴 (HABP/VABP)</td>
+                            <td>임상3상 완료(글로벌)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">DA-1229<br>(슈가논/슈가메트 XR)</th>
+                            <td>2형 당뇨병</td>
+                            <td>DPP-4 억제제</td>
+                            <td>발매 (한국)</td>
+                            <td>일부지역 가능</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">DA-6886</th>
+                            <td>과민성대장증후군(변비형)</td>
+                            <td>5-HT 4 효능제</td>
+                            <td>임상 1상 완료 (한국)</td>
+                            <td>가능</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">DA-8010</th>
+                            <td>과민성 방광</td>
+                            <td>M3 수용체 길항제</td>
+                            <td>임상 1상 완료 (유럽) 임상 2상(국내)</td>
+                            <td>가능</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">DA-1241</th>
+                            <td>2형 당뇨병</td>
+                            <td>GPR119 효능제</td>
+                            <td>임상 1a상 완료(미국)임상 1b상(미국)</td>
+                            <td>가능</td>
+                        </tr>
+                        </tbody>
+				    </table>
+                </div>
+
+                <div class="task_con">
+                    <h3>천연물의약품</h3>
+                    <table> 
+                        <thead>
+                        <tr>
+                            <th scope="col">코드명<br>브랜드명</th>
+                            <th scope="col">적응증</th>
+                            <th scope="col">계열</th>
+                            <th scope="col">개발단계</th>
+                            <th scope="col">라이센싱<br>가능여부</th>
+                        </tr>
+                        </thead>
+                        <tbody> 
+                            <tr>
+                                <th scope="row">DA-9801</th>
+                                <td>당뇨병성신경병증</td>
+                                <td>식물 추출물</td>
+                                <td>임상 2상 완료 (미국)</td>
+                                <td>불가</td>
+                            </tr>
+        
+                            <tr>
+                                <th scope="row">DA-9805</th>
+                                <td>파키슨 병</td>
+                                <td>식물 추출물</td>
+                                <td>임상 2상 (미국)</td>
+                                <td>가능</td>
+                            </tr>
+                        </tbody>
+				    </table>
+                </div>
+
+                <div class="task_con">
+                    <h3>바이오의약품</h3>
+                    <table> 
+                        <thead>
+                        <tr>
+                            <th scope="col">코드명<br>브랜드명 </th>
+                            <th scope="col">적응증</th>
+                            <th scope="col">계열</th>
+                            <th scope="col">개발단계</th>
+                            <th scope="col">라이센싱<br />가능여부</th>
+                        </tr>
+                        </thead>
+                        <tbody> 
+                            <tr>
+                                <th scope="row">DA-3880</th>
+                                <td>빈혈</td>
+                                <td>Darbepoetin α 바이오시밀러</td>
+                                <td>임상 1상 완료 (유럽)
+                                <br>NDA 제출 (일본)</td>
+                                <td>일부지역 가능</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">DMB-3111</th>
+                                <td>유방암</td>
+                                <td>Trastuzumab 바이오시밀러</td>
+                                <td>임상 1상 완료 (일본)</td>
+                                <td>가능(일본,유럽,러시아,CIS,라틴아메리카 제외)</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">DA-3131</th>
+                                <td>노인성안구황반변성</td>
+                                <td>New anti-VEGF mAb</td>
+                                <td>전임상 (한국)</td>
+                                <td>가능</td>
+                            </tr>
+                                <tr>
+                                <th scope="row">DMB-3115</th>
+                                <td>건선</td>
+                                <td>Ustekinumab 바이오시밀러</td>
+                                <td>전임상 완료 (영국)</td>
+                                <td>가능 (일본 제외)</td>
+                            </tr>
+                        </tbody>
+				    </table>
+                    <p>*동아쏘시오홀딩스 파이프라인 포함</p>
+                </div>
+
+
+            </div>
+
+        </article>
+
+
+        <? include "../common/sub_footer.html" ?>
+
+</body>
+</html>

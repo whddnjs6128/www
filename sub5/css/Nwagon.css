@@ -1,0 +1,27 @@
+@charset "utf-8";
+v\:group,
+v\:shape,
+v\:line,
+v\:polyline,
+v\:rect,
+v\:oval,
+v\:fill {
+	behavior : url(#default#VML);
+}
+
+v\: * {behavior : url(#default#VML);}
+/*common*/
+.background text{fill:#666;font-family:'Noto Sans KR', sans-serif, Dotum;font-size:11px}
+ul.accessibility {font-size: 1px;height: 1px; line-height: 1px; overflow: hidden; width: 1px;}
+.background .fields text{fill:#666;font-family:'Noto Sans KR', sans-serif, Dotum;font-size:11px}
+.foreground .labels text{fill:#666;font-family:'Noto Sans KR', sans-serif, Dotum;font-size:11px}
+.tooltip text{fill:#777;font-family:'Noto Sans KR', sans-serif, Dotum;font-size: 11px;}
+.tooltip rect{fill:rgba(255,255,255,0.9);stroke:#ccc;stroke-width:0.5;}
+.fields text{fill:#666;font-family:'Noto Sans KR', sans-serif, Dotum;font-size:11px}
+.guide_line{stroke:#4010ad;stroke-width:1}
+
+/*pie and donut */
+.foreground .donuts .sector {stroke-width:1; stroke:#fff; cursor:pointer}
+
+/* < IE8  */
+div.label_ie {padding:0; margin:0;}

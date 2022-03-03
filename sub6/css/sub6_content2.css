@@ -1,0 +1,33 @@
+/* 고객지원 - 상담안내 */
+
+.sub_menu ul{width: 750px;}
+#content .sub_nav ul{width: 600px;}
+#content .content_area h3{text-align: left;}
+#content .content_area h3.hidden{padding: 0; margin: 0;}
+
+
+#content .process ul{overflow: hidden; padding: 50px 20px;}
+#content .process ul li{float: left; margin-right: 26px; box-sizing: border-box; position: relative;}
+#content .process ul li::after{content: ''; width: 10px; height: 10px; border-right: 3px solid #a5c1d1; border-bottom: 3px solid #a5c1d1; position: absolute; top: 50%; margin-top: -5px;transform: rotate(-45deg);right: -17px;}
+#content .process ul li:last-of-type{margin-right: 0;}
+#content .process ul li:last-of-type::after{content: none;}
+#content .process ul li dl{width: 170px; height: 170px; border: 1px solid #333; box-sizing: border-box; border-radius: 50%; box-shadow: 8px 13px 20px 0px rgb(0 0 0 / 10%); padding: 25px; text-align: center; }
+#content .process ul li dl dt{font-size: 18px; color: #71afee; font-weight: 500; margin-bottom: 20px; margin-top: 5px;}
+#content .process ul li dl dd{font-size: 22px; color: #0d5cab; font-weight: 500; line-height: 25px; margin-bottom: 20px;}
+
+
+#content .service  h3{margin-top: 100px; margin-bottom: 50px;}
+#content .service .txt p {margin-bottom: 5px;}
+#content .service .txt strong{font-size: 24px;}
+#content .service .txt p:last-of-type{margin-bottom: 0;}
+#content .time .txt{padding: 50px 0 100px 300px;}
+#content .time{background: url(../images/content2/stopwatch.png) no-repeat left bottom;}
+
+#content .call{background: url(../images/content2/customer-service.png) no-repeat left bottom;}
+#content .call ul {}
+#content .call ul li:first-of-type{margin-bottom: 20px;}
+#content .call ul li dl dd span{font-size: 20px; font-weight: 500;}
+#content .call .txt{padding: 10px 0 30px 300px;}
+
+
+#footerArea{margin-top: 150px;}

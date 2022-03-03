@@ -1,0 +1,84 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-CEO인사말</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content2.css">
+    
+
+    <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+    
+         <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="서브페이지_회사소개_비주얼">
+            <h3>회사소개</h3>
+        </div>
+
+
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub1_1.html">기업개요</a></li>
+                <li class="current"><a href="./sub1_2.html">CEO인사말</a></li>
+                <li><a href="./sub1_3.html">연혁</a></li>
+                <li><a href="./sub1_4.html">오시는길</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <i class="fas fa-home"></i> &gt; 회사소개 &gt; <strong>CEO인사말</strong>
+                </div>
+                <h2>CEO인사말</h2>
+                <p>“글로벌 제약시장을 선도할 <span>동아ST</span>의 성장을 함께 지켜봐주세요.”</p>
+            </div>
+
+            <div class="content_area">
+                <img src="./images/content2/ceo.jpg" alt="ceo이미지">
+                <div class="text_area">
+                    <p>여러분 안녕하십니까.<br>
+                        동아ST 회장 엄대식입니다.</p>
+                    <p>동아ST는 동아제약의 지주회사 전환에 따라
+                        출발한 전문의약품(ETC) 전문 기업입니다.</p>
+                    <p>동아ST가 나아갈 방향과 핵심은 혁신적 신약개발을
+                        통한 <span>Global Healthcare</span> 기업으로 도약입니다.</p>
+                    <p>우수한 신약의 지속적인 개발이 곧 인류의 건강과
+                        행복을 위한 것이며, <span>사회적 책임</span>을 다하는 것이라는 일념으로 세계적 수준의 연구소와 뛰어난 역량의 인재를 중심으로 한 최적의 연구 인프라를 운영하고 있습니다.</p>
+                    <p>특히, 면역 항암제와 치매 치료제 등 인류의
+                        생명연장과 완치 그리고 환자와 그 가족들의 고통을 덜어내기 위한 신약개발을 어려운 길이지만 <span>사명감</span>을 가지고 노력해 가고 있습니다.</p>
+                    <p>이를 통해 적극적으로 해외시장을 개척하고 수출을 확대하여 세계적 제약기업으로서 발전하겠습니다.</p>
+                    <p>동아ST는 헬스케어 중심 경영이라는 이념 아래
+                        투명하고 체계적인 경영 시스템을 도입 운영하고
+                        있으며 <span>모든 사람이 건강하고 행복</span>하게 살 수 있는
+                        건강한 미래를 위해 힘차게 달려가겠습니다.</p>
+                    <p>앞으로도 글로벌 제약사로 성장할 동아ST의 발전을
+                        함께 지켜봐 주시기를 바랍니다.
+                        감사합니다.</p>
+                    <p>동아ST 회장 <strong>엄대식</strong></p>
+                </div>
+            </div>
+
+            
+
+        </article>
+
+
+        <? include "../common/sub_footer.html" ?>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<div id="skipNav">
+    <a href="#content">본문 바로가기</a>
+    <a href="#gnb">글로벌 네비게이션 바로가기</a>
+</div>
+
+<div class="wrap">
+    <header id="headerArea">
+
+        <div class="header_inner">
+            
+            <ul class="top_menu">
+
+                <?
+                    if(!$userid) //세션변수가 만들어지지 않았다면
+                    {
+                ?>
+                <li><a href="../login/login_form.php">로그인</a></li>
+                <li><a href="../member/member_check.html">회원가입</a></li>
+                <?
+                    }
+                    else   //세션변수가 만들어져 있다면
+                    {
+                ?>
+
+                <li><a href="../login/logout.php">로그아웃</a></li>
+                <li><a href="../member/member_form_modify.php">정보수정</a></li>
+                <?
+                    }   
+                ?>
+            </ul>
+            
+            <div class="bottom_menu">
+                <h1 class="logo"><a href="../index.html">ST동아로고</a></h1>
+                
+                <nav id="gnb">
+                    <h2 class="hidden">글로벌네비게이션영역</h2>
+                    <ul class="dropdownmenu">
+                        <li class="m1 menu">
+                          <h3><a class="depth1" href="../sub1/sub1_1.html">회사소개</a></h3>
+                          <ul>
+                              <li><a href="../sub1/sub1_1.html">기업개요</a></li>
+                              <li><a href="../sub1/sub1_2.html">CEO인사말</a></li>
+                              <li><a href="../sub1/sub1_3.html">연혁</a></li>
+                              <li><a href="../sub1/sub1_4.html">오시는길</a></li>
+                          </ul>
+                      </li>
+                      <li class="m2 menu">
+                          <h3><a class="depth1" href="../product/list.php">사업분야</a></h3>
+                          <ul>
+                            <li><a href="../product/list.php">동아ST제품</a></li>
+                            <li><a href="../sub2/sub2_2.html">사업소개</a></li>
+                            <li><a href="../sub2/sub2_3.html">제품FAQ</a></li>
+                          </ul>
+                      </li>
+                      <li class="m3 menu">
+                          <h3><a class="depth1" href="../sub3/sub3_1.html">연구개발</a></h3>
+                          <ul>
+                            <li><a href="../sub3/sub3_1.html">연구본부</a></li>
+                            <li><a href="../sub3/sub3_2.html">연구활동</a></li>
+                            <li><a href="../sub3/sub3_3.html">연구성과</a></li>
+                            <li><a href="../sub3/sub3_4.html">임상과제</a></li>
+                          </ul>
+                      </li>
+                      <li class="m4 menu">
+                          <h3><a class="depth1" href="../sub4/sub4_1.html">정도경영</a></h3>
+                          <ul>
+                            <li><a href="../sub4/sub4_1.html">철학</a></li>
+                            <li><a href="../sub4/sub4_2.html">CCM</a></li>
+                            <li><a href="../sub4/sub4_3.html">CSR</a></li>
+                          </ul>
+                      </li>
+                      <li class="m5 menu">
+                          <h3><a class="depth1" href="../sub5/sub5_1.html">기업정보</a></h3>
+                          <ul>
+                            <li><a href="../sub5/sub5_1.html">인재상</a></li>
+                            <li><a href="../sub5/sub5_2.html">주주총회</a></li>
+                            <li><a href="../sub5/sub5_3.html">재무정보</a></li>
+                          </ul>
+                      </li>
+                      <li class="m6 menu">
+                          <h3><a class="depth1" href="../greet/list.php">고객지원</a></h3>
+                          <ul>
+                            <li><a href="../greet/list.php">새소식</a></li>
+                            <li><a href="../sub6/sub6_2.html">상담안내</a></li>
+                            <li><a href="../sub6/sub6_3.html">온라인문의</a></li>
+                          </ul>
+                         </li>
+                    </ul>               
+                </nav>
+            </div>
+
+        </div>
+    </header>

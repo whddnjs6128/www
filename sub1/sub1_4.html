@@ -1,0 +1,205 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-오시는길</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content4.css">
+    
+
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f2831dedd1b2a2bbe816efb8bec2faae"></script>
+    <script src="js/map.js"></script>
+</head>
+<body>
+    
+      <? include "../common/sub_header.html" ?>
+
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="서브페이지_회사소개_비주얼">
+            <h3>회사소개</h3>
+        </div>
+
+
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub1_1.html">기업개요</a></li>
+                <li><a href="./sub1_2.html">CEO인사말</a></li>
+                <li  ><a href="./sub1_3.html">연혁</a></li>
+                <li class="current"><a href="./sub1_4.html">오시는길</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <i class="fas fa-home"></i> &gt; 회사소개 &gt; <strong>오시는 길</strong>
+                </div>
+                <h2>오시는 길</h2>
+                <p><span>동아ST</span>의 연구소 위치 및 지점 현황입니다.</p>
+
+                <div class="sub_nav">
+                    <ul>
+                        <li ><a href="#" class="current tab tab1">본사</a></li>
+                        <li><a href="#" class="tab tab2">연구소</a></li>
+                        <li><a href="#" class="tab tab2">지점</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+
+            <div class="content_area">
+                <div class="st_location  contlist">
+                    <div id="map1"  class="kakao" style="width:1200px;height:500px;"></div>
+                    <div class="map_info">
+                        <div class="map_title">
+                            <h3>ST동아 본사</h3>
+                            <span>서울특별시 동대문구 천호대로 64</span>
+                        </div>
+                        <div class="map_detail">
+                            <ul >
+                                <li>
+                                    <dl>
+                                        <dt><i class="fas fa-subway"></i>지하철 이용시</dt>
+                                        <dd><span class="line1">1호선</span>1호선 신설동역 6번 출구 도보 10분 거리</dd>
+                                        <dd><span class="line2">2호선</span>2호선 신설동역 9번 출구 도보 5분 거리 </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><i class="fas fa-bus"></i>버스 이용시</dt>
+                                        <dd>정류장 : 서울시 동부병원, 용두동신동아아파트</dd>
+                                        <dd>버스노선 : 303, 721, 2112</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lab_location  contlist">
+                    <div id="map2"  class="kakao" style="width:1200px;height:500px;"></div>
+                    <div class="map_info">
+                        <div class="map_title">
+                            <h3>ST동아 연구소</h3>
+                            <span>경기도 용인시 기흥구 금화로 105번길 21</span>
+                        </div>
+                        <div class="map_detail">
+                            <ul >
+                                <li>
+                                    <dl>
+                                        <dt><i class="fas fa-subway"></i>지하철 이용시</dt>
+                                        <dd><span class="line3">수인분당</span>수인분당선 상갈역 3번 출구 도보 10분 거리</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><i class="fas fa-bus"></i>버스 이용시</dt>
+                                        <dd>정류장 : 경기도 박물관, 보라초등학교</dd>
+                                        <dd>버스노선 : 37, 39 116-1</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="office  contlist">
+                    <h3 class="hidden">지점</h3>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>서울 1,2,3,4 지점 (서울)</dt>
+                                <dd>서울특별시 동대문구 천호대로 14길 18</dd>
+                                <dd>02-920-8385</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>경기1, 2 지점 (안양)</dt>
+                                <dd>경기도 안양시 만안구 안양로 552</dd>
+                                <dd>070-8636-2523</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>영남2지점 (경주)</dt>
+                                <dd>경상북도 경주시 공단로 41</dd>
+                                <dd>054-776-3311</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>안동사업소 (안동)</dt>
+                                <dd>경상북도 안동시 공단로 48</dd>
+                                <dd>054-859-7811~2</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>대구지점 (대구)</dt>
+                                <dd>대구광역시 동구 동부로 22길 34</dd>
+                                <dd>053-260-1114</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>부산지점 (부산)</dt>
+                                <dd>부산광역시 연제구 거제천로 270번길 16</dd>
+                                <dd>051-804-1201</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>제주사업소</dt>
+                                <dd>제주시 아라2동 1545-1</dd>
+                                <dd>064-746-5274</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>영남1지점 (창원)</dt>
+                                <dd>경상남도 창원시 마산회원구 내서읍 중리공단로 187</dd>
+                                <dd>070-8636-3301</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>대전지점 (대전)</dt>
+                                <dd>대전광역시 중구 어덕마을로 18</dd>
+                                <dd>042-253-6001</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>충청지점 (천안)</dt>
+                                <dd>충남 천안시 서북구백석공단1로 200-23</dd>
+                                <dd>041-520-9756</dd>
+                            </dl>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <? include "../common/sub_footer.html" ?>
+        <script src="./js/tab.js"></script>
+
+</body>
+</html>

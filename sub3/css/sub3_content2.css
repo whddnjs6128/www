@@ -1,0 +1,73 @@
+/* 연구개발 연구활동 */
+#content .title_area::after{content: ''; position: absolute; left: 50%;width: 2000px; height: 1px; bottom: 55px; background: #999; margin-left: -1000px;}
+@keyframes grow {
+    0%   { background-size: 100% auto; }
+    50% { background-size: 110% auto; }
+    100% { background-size: 100% auto; }
+}
+
+
+#content .sub_nav ul{width: 1200px;}
+
+#content .content_area h3{text-align: center;}
+
+#content .content_area .top_textbox{margin-top: 30px; width: 1200px; padding: 100px 0; margin-bottom: 50px; animation: grow 15s linear infinite;}
+#content .content_area .top_textbox p{text-align: center; font-size: 28px; font-weight: 400; color: #fff;line-height: 50px; }
+
+#content .content_area .intro_wrap{width: 1200px; overflow: hidden; margin-bottom: 100px;}
+#content .content_area .intro_wrap dt{font-size: 30px; font-weight: 700;width: 300px; float: left;}
+#content .content_area .intro_wrap dd{background: #f5f5f5; padding: 45px; width: 900px; float: right; box-sizing: border-box; border: 1px solid #dedede; text-align: justify; font-size: 20px; color: #666;}
+
+#content .content_area .new_medicine .top_textbox{background: url(../images/content2/new_lab.jpg) center;}
+#content .content_area .new_medicine ul{overflow: hidden; margin-bottom: 150px;}
+#content .content_area .new_medicine li{float: left;  text-align: center; color: #333;width: 225px; box-sizing: border-box; border: 1px solid #ccc; margin-right: 100px; height: 225px; border-radius: 50%; }
+#content .content_area .new_medicine li img{margin-bottom: 10px;margin-top: 29px;}
+#content .content_area .new_medicine li p{font-weight: 500; font-size: 20px;}
+#content .content_area .new_medicine li:last-of-type{margin-right: 0;}
+
+#content .content_area .product_develop{margin-bottom: 150px;}
+#content .content_area .product_develop .top_textbox{background: url(../images/content2/develop.jpg) center; }
+#content .content_area .bottom_con ul{overflow: hidden;}
+#content .content_area .bottom_con ul li{float: left; margin-right: 75px; width: 350px; font-size: 20px; color: #666; text-align: center;}
+#content .content_area .bottom_con ul li:last-of-type{margin-right: 0;}
+#content .content_area .bottom_con dl{position: relative;margin-top: 35px; margin-bottom: 35px;padding: 60px 38px; border: 2px solid #999; padding-top: 80px; box-sizing: border-box; }
+
+#content .content_area .bottom_con dl dt{font-size: 20px; font-weight: 700; border: 3px solid #999; position: absolute; top: -30px; left: 50%; margin-left: -150px; width: 300px; height: 60px; text-align: center; border-radius: 60px; box-sizing: border-box; background: #fff; transition: all .3s;}
+
+
+#content .content_area .bottom_con dl dt span{display: inline-block;margin-top: 10px; text-align: center;}
+#content .content_area .bottom_con dl dt::after, #content .content_area .bottom_con dl dt::before{content: '';display: inline-block;width: 10px; height: 10px; box-sizing: border-box; border: 2px solid #fff; border-radius: 50%;}
+#content .content_area .bottom_con dl dt::before{margin-left: -7px; float: left; margin-top: 22px;}
+#content .content_area .bottom_con dl dt::after{margin-right: -7px; float: right;margin-top: 22px;}
+#content .content_area .bottom_con dl ul{margin-bottom:0;}
+#content .content_area .bottom_con dl ul li{width: auto; float: none; margin: 0; margin-bottom: 10px;}
+#content .content_area .bottom_con dl ul li:last-of-type{margin-bottom: 0;}
+
+#content .content_area .bottom_con ul li:nth-of-type(1) dl dt{color: #05606c; border-color: #05606c;}
+#content .content_area .bottom_con ul li:nth-of-type(1) dl{border-color: #05606c;}
+#content .content_area .bottom_con ul li:nth-of-type(1) dl dt::after , #content .content_area .bottom_con ul li:nth-of-type(1) dl dt::before{background: #05606c;}
+#content .content_area .bottom_con ul li:nth-of-type(1) dl dd ul li{color: #05606c;}
+#content .content_area .bottom_con ul li:nth-of-type(1) dl:hover dt{background: #05606c; color: #fff;}
+
+#content .content_area .bottom_con ul li:nth-of-type(2) dl dt{color: #00abcd; border-color: #00abcd;}
+#content .content_area .bottom_con ul li:nth-of-type(2) dl{border-color: #00abcd;}
+#content .content_area .bottom_con ul li:nth-of-type(2) dl dt::after , #content .content_area .bottom_con ul li:nth-of-type(2) dl dt::before{background: #00abcd;}
+#content .content_area .bottom_con ul li:nth-of-type(2) dl dd ul li{color: #00abcd;}
+#content .content_area .bottom_con ul li:nth-of-type(2) dl:hover dt{background: #00abcd; color: #fff;}
+
+
+#content .content_area .bottom_con ul li:nth-of-type(3) dl dt{color: #7ccadd; border-color: #7ccadd;}
+#content .content_area .bottom_con ul li:nth-of-type(3) dl{border-color: #7ccadd;}
+#content .content_area .bottom_con ul li:nth-of-type(3) dl dt::after , #content .content_area .bottom_con ul li:nth-of-type(3) dl dt::before{background: #7ccadd;}
+#content .content_area .bottom_con ul li:nth-of-type(3) dl dd ul li{color: #7ccadd;}
+#content .content_area .bottom_con ul li:nth-of-type(3) dl:hover dt{background: #7ccadd; color: #fff;}
+
+
+#content .content_area .bio_tech{margin-bottom: 150px;}
+#content .content_area .bio_tech .top_textbox{background: url(../images/content2/bio.jpg) center; }
+
+#content .content_area .dementia{margin-bottom: 150px;}
+#content .content_area .dementia .top_textbox{background: url(../images/content2/dementia.jpg) center; }
+
+#content .content_area .contlist{display: none;}
+#content .content_area .contlist:first-of-type{display: block;}

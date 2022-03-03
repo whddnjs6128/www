@@ -1,0 +1,13 @@
+/* 연구개발 연구성과 */
+#content .content_area{overflow: hidden; margin-bottom: 150px;}
+#content .content_area img{margin-top: 150px;}
+#content .content_area h3{margin-top: 50px; width: 300px; float: left;}
+#content .content_area ul{float: left; width: 900px;}
+#content .content_area ul li{margin-top: 50px;}
+#content .content_area h4{font-size: 30px;font-weight: 700; border-bottom: 1px solid #ccc; margin-bottom: 30px; position: relative; padding-bottom: 10px;}
+#content .content_area h4::before{content: ''; position: absolute; bottom: -1px; left: 0; width: 170px; height: 3px; background: #00abcd;}
+#content .content_area dl{overflow: hidden; font-size: 20px;}
+#content .content_area dl dt{float: left;color: #05606c; font-weight: 700; width: 90px;}
+#content .content_area dl dd{margin-left: 90px;margin-bottom: 20px;position: relative;}
+#content .content_area ul li dl:last-of-type dd:last-of-type{margin-bottom: 0px;}
+#content .content_area dl dd::before{content: '•'; color: #ccc;position: absolute; left: -20px; transform: scale(.8);}

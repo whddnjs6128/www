@@ -1,0 +1,18 @@
+/* 연구개발 임상과제 */
+#content .content_area{ margin-bottom: 150px;}
+#content .content_area img{margin-top: 150px;}
+#content .content_area h3{width: 300px; float: left;margin-top: 0;}
+
+#content .content_area .task_con{margin-top: 100px; overflow: hidden;}
+#content .content_area .task_con:first-of-type{margin-top: 50px;}
+#content .content_area .task_con table{font-size: 16px; width: 900px;}
+
+#content .content_area .task_con thead tr th{border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; border-top: 1px solid #333; padding: 20px; background: #f7f7f7; width: 20%;}
+#content .content_area .task_con thead tr th:last-of-type{border-right: none;}
+#content .content_area .task_con tbody tr th{border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;padding: 20px; font-weight: 400;}
+#content .content_area .task_con tbody tr td{border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 20px;}
+#content .content_area .task_con tbody tr td:last-of-type{border-right: none;}
+#content .content_area .task_con:first-of-type tbody  tr:nth-of-type(2) td:last-of-type{border-right: 1px solid #ccc}
+
+
+#content .content_area p:last-of-type{float: right;margin-top: 50px; color: #999;}

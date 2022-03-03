@@ -1,0 +1,30 @@
+/* 제품FAQ */
+.sub_menu ul{width: 750px;}
+#content .content_area{position: relative;}
+#content .content_area h3{padding-left: 30px;}
+#content .content_area .all{display: inline-block;position: absolute; right: 0; z-index: 2; top: 30px;}
+
+#content .content_area ul{margin-top: 50px;}
+#content .content_area .article p{cursor: pointer; font-size: 20px; text-align: justify; line-height: 30px;}
+#content .content_area .article p a{display: block; padding: 30px;}
+#content .content_area .article p.question{font-weight: 500;}
+
+#content .content_area .article p.question span{color: #00abcd; display: inline-block; width: 40px; font-weight: 700;}
+
+#content .content_area .article p.answer{padding: 30px 35px;}
+#content .content_area .article p.answer span:first-of-type{color: #f00;display: inline-block; width: 40px; float: left; font-weight: 700;}
+#content .content_area .article p.answer span:nth-of-type(2){display: inline-block; width: 1000px; clear: both;}
+
+#content .content_area .article .answer{display: none; background-color: #f9f9f9; cursor: default;}
+
+#content .content_area  ul li{border-bottom: 1px solid #ccc;}
+#content .content_area  ul li:first-of-type{border-top: 2px solid #00abcd;}
+#content .content_area  ul:last-of-type{margin-bottom: 150px;}
+
+
+#content .content_area .bottom_link{position: relative; width: 2000px; left: 50%; margin-left: -1000px; background: #00abcd; padding: 50px 0;}
+#content .content_area .bottom_link .bottom_inner{color: #fff; overflow: hidden; width: 1200px; margin: 0 auto;}
+#content .content_area .bottom_link .bottom_inner img{float: left; margin-top: 11px;}
+#content .content_area .bottom_link .bottom_inner .text_con{float: left; margin-left: 30px;}
+#content .content_area .bottom_link .bottom_inner .text_con h3{margin-top: 0; padding-left: 0; font-size: 30px;}
+#content .content_area .bottom_link .bottom_inner a{display: block; float: right; width: 180px; padding: 15px 0; color: #fff; background: #05606c; text-align: center; margin-top: 7px;}

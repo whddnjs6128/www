@@ -1,0 +1,83 @@
+
+body{
+      background: #f7f7f7;
+      font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+
+.logo a {
+      display: block;
+      width: 209px;
+      height: 42px;
+      background: url(../../common/images/logo.png) no-repeat top center;
+      text-indent: -999%;
+      overflow: hidden;
+      margin: 0 auto;
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      margin-left: -104px;
+  }
+
+#content {
+      width: 600px;
+      margin: 0 auto;
+      margin-top: 150px;
+      font-family: 'Noto Sans KR', sans-serif;
+      margin-bottom: 150px;
+      text-align: center;
+      padding: 30px 0;
+      background: #fff;
+
+}
+
+
+#content h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+
+input {
+      padding: 0 10px;
+      border: 1px solid #ccc;
+      width: 70%;
+      height: 50px;
+      outline: 0;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+}
+
+ul li:nth-of-type(2) input{margin-bottom: 40px;}
+
+
+ul.find_go{text-align: right; width: 70%; margin: 30px 15%;}
+ul.find_go li{display: inline-block;}
+ul.find_go li a{font-size: 16px; color: #999; transition:  all .4s;}
+ul.find_go li:hover a{color: #333;}
+ul.find_go li:first-of-type{margin-right: 20px;}
+
+
+
+.login_button{display: inline-block;width: 70%;height: 50px;box-sizing: border-box;line-height: 24px;padding: 8px 0;border: 1px solid #00abcd;background: #00abcd;color: #fff;font-size: 16px;margin: 0 5px; cursor: pointer;transition: all .4s;}
+.login_button:hover{background: #fff; color: #00abcd;}
+
+
+#join_button {text-align: justify; overflow: hidden; width: 70%; margin: 0 auto 70px; }
+#join_button strong{display: block; margin-bottom: 10px;}
+#join_button p{float: left; font-size: 14px; color: #999; }
+#join_button .joinUs{float: right; box-sizing: border-box; width: 30%; border: 1px solid #00abcd; color: #00abcd; font-size: 16px; height: 40px; padding: 7px; text-align: center; transition: all .4s;}
+#join_button .joinUs:hover{background: #00abcd; color: #fff;}
+
+
+/* 아이디찾기 */
+#hp1{padding: 0 10px;}
+#id_pw_input ul li.tel{width: 70%; margin: 0 auto;}
+#id_pw_input ul li.tel .find_input{width: 31%; height: 50px;}
+
+.loadtexton{display: block;margin: 50px auto; text-align: center; font-size: 1.1rem; padding: 30px; background: #f7f7f7; width: 70%; line-height: 2rem;}
+.loadtexton p{margin-top: 20px;}
+.loadtexton strong:nth-of-type(2){font-size: 1.5rem;}

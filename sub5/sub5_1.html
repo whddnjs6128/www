@@ -1,0 +1,123 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업정보-인재상</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub5common.css">
+    <link rel="stylesheet" href="./css/sub5_content1.css">
+    
+
+    <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+    
+    <? include "../common/sub_header.html" ?>
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="서브페이지_기업정보_비주얼">
+            <h3>기업정보</h3>
+        </div>
+
+
+        <div class="sub_menu">
+            <ul>
+                <li class="current"><a href="./sub5_1.html">인재상</a></li>
+                <li><a href="./sub5_2.html">기업지배구조</a></li>
+                <li><a href="./sub5_3.html">재무정보</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <i class="fas fa-home"></i> &gt; 기업정보 &gt; <strong>인재상</strong>
+                </div>
+                <h2>인재상</h2>
+                <p>글로벌 리더의 꿈 <span>동아ST</span>와 시작하세요.</p>
+            </div>
+
+            <div class="content_area">
+                
+                <div class="talent_topcon">
+                    <h3 class="hidden">인재상</h3>
+                    <img src="images/content1/talent.jpg" alt="평화의숲 조성사업">
+                    
+                    <dl>
+                        <dt>동아의 인재상 :D</dt>
+                        <dd>85년의 기업 역사 속에서 우리는 '<span>법고창신</span>(法古創新: 옛 것을 배우고 익혀 새로운 것으로 거듭나게 함)'의 의미를 되새기고 있습니다. '창의','협동','봉사'의 사시(社是)를 바탕으로 '동아인이라면 어떻게 살아야 하는가?'라는 질문에 우리는 스스로 아래와 같이 대답하고자 합니다.</dd>
+                    
+                        <dd>자신이 맡은 일에서 현실에 안주하지 않고 새로운 시각으로 문제해결을 위해 도전하며, 변화하지 않는 환경을 탓하고 아쉬워하기 보다는 내가 먼저 변화시킬 수 있는 인재.</dd>
+                        <dd>혼자가 아닌 우리가 할 수 있는 가치의 소중함을 알고, 이를 위해 기꺼이 주고 받으며 열린 마음으로 소통할 수 있는 인재.</dd>
+                        <dd>마지막으로, 기업의 가치가 '이윤 추구'에만 있는 것이 아니라 사회의 일원으로서 그 책임을 다할 때 의미가 있는 것임을 알고 함께 그 가치를 일구어 나갈 수 있는 인재.</dd>
+                        <dd>우리는 이러한 인재를 <span>'D-STYLE'</span>인재라고 부르고 싶습니다.</dd>
+                    </dl>
+                </div>
+
+                   <div class="talent_midcon">
+                       <div class="midcon_inner">
+                           <p>:D STYLE TALENT</p>
+                       </div>
+                    </div>
+
+                    <div class="talent_bottom">
+                        <h3>비전</h3>
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt><span>혁신추구</span></dt>
+                                    <dd><span>01</span> 혁신의 생활화</dd>
+                                    <dd><span>02</span> 새로운 시각</dd>
+                                    <dd><span>03</span> 도전 정신</dd>
+                                    <dd><span>04</span> 성실함과 끈기</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><span>변화 주도</span></dt>
+                                    <dd><span>05</span> 민첩한 대응</dd>
+                                    <dd><span>06</span> 지속적인 변화 노력</dd>
+                                    <dd><span>07</span> 열린 마음</dd>
+                                    <dd><span>08</span> 솔선수범</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><span>상호 신뢰</span></dt>
+                                    <dd><span>09</span> 시너지 창출</dd>
+                                    <dd><span>10</span> Win-Win</dd>
+                                    <dd><span>11</span> 적극적인 소통</dd>
+                                    <dd><span>12</span> 일관된 행동</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><span>함께 성장</span></dt>
+                                    <dd><span>13</span> 사회적 책임</dd>
+                                    <dd><span>14</span> 나눔과 봉사</dd>
+                                    <dd><span>15</span> 자기 계발</dd>
+                                    <dd><span>16</span> 책임 의식</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                
+
+            </div>
+
+        </article>
+
+
+        <? include "../common/sub_footer.html" ?>
+       
+</body>
+</html>

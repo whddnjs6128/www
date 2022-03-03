@@ -1,0 +1,193 @@
+/* 비주얼 영역 */
+/* .visual{width:2000px;position: relative; } */
+.visual{ position:relative;width:2000px; height:950px;overflow:hidden; left: 50%; margin-left: -1000px; top: 0;}
+
+
+.gallery{position:relative;left:0; top:0; overflow:hidden; width:2000px; height:950px;}
+.gallery li{display:none; position: relative;}
+
+.gallery img{animation: ani 30s linear infinite;}
+@keyframes ani {
+    from {transform: scale(1);}
+    to {transform: scale(1.5);}
+}
+
+.gallery li span{position: absolute; left: 20%; top:40%;font-size: 50px; color: #fff;}
+.gallery li strong{color: #00abcd;}
+/* .gallery .link1 span{ font-weight: 500;} */
+.gallery .link3 span{left: 45%;}
+
+.dock{width:330px; position:absolute; left:50%; bottom: 100px; margin-left: -110px;}
+
+.dock .mbutton{ margin-right:15px; cursor:pointer; display:block; float:left; width:16px; height:16px;background: #fff; border-radius:8px;transition: all .5s}
+
+.dock .ps{ margin-right:15px; margin-top: -5px; cursor:pointer; display:block; float:left; width:25px; height:25px;background:url(../images/stop.png)}
+
+.visual .btn{display: block; width: 100px; height: 100px; position: absolute;  top:400px;cursor:pointer; color: #00abcd;}
+.visual .btn i{font-size: 80px;}
+.visual .btnLeft{left:50%; margin-left: -800px;}
+.visual .btnRight{left:50%; margin-left: 800px;}    
+
+
+
+/* 본문 콘텐츠 영역 */
+#content{width:1200px; margin: 0 auto;}
+#content h3{font-size: 50px; font-weight: 700;margin-bottom: 40px;}
+#content p{font-size: 24px; font-weight: 400; margin-bottom: 40px;}
+
+/* search */
+#content .search{ width: 2000px;position: relative;top: 0; left: 50%; margin-left:-1000px;}
+#content .search_inner{ background: #00abcd; margin: 0 auto; font-weight: 700; padding: 100px 550px; text-align: center;}
+#content .search h3{color: #fff;}
+#content .search dl{font-size: 24px; overflow: hidden; color: #666; margin-bottom: 40px; margin-left: 220px;}
+#content .search dt{float: left; margin-right: 20px;}
+#content .search dd{float: left; margin-right: 20px;}
+#content .search dd a{color: #666;}
+#content .search dd:hover a{color: #fff;}
+#content .search .search_box{position: relative;}
+#content .search input{width: 870px; height: 70px; border: 0; outline: none; padding: 0 0 0 30px; font-size: 24px; color: #666;}
+#content .search a.search_form{width: 64px;height: 64px; position: absolute; right: 0; top: 3px; ;background: #fff; border: 0;cursor: pointer;} 
+#content .search a.search_form i{color: #00abcd;font-size: 50px; margin-top: 7px;}
+
+
+/* 신제품  */
+#content .new_product{margin: 0 auto; padding-top: 100px; text-align: center; }
+
+
+
+#content .new_product .slide_gallery_box{width: 1050px; overflow:hidden; position:relative;margin-left: 75px;}
+#content .new_product .product_btn{position: relative; }
+#content .new_product .product_btn a{display: inline-block; font-size: 75px; color: #ccc; transition: all .5s;}
+#content .new_product .product_btn a:hover{color: #00abcd;}
+#content .new_product .product_btn a:nth-of-type(1) i{position: absolute;left: 0; top: 200px;}
+#content .new_product .product_btn a:nth-of-type(2) i{position: absolute;right: 0; top: 200px;}
+
+#content .new_product .product_slide{width: 4200px;position:relative; left: 0; top: 0;}
+#content .new_product .product_slide ul{transition: all .5s ease-in-out;}
+#content .new_product .product_slide ul li{float:left; border: 5px solid transparent;box-sizing: border-box; width: 350px; height: 520px; text-align: center; transition: all .3s ease;}
+#content .new_product .product_slide ul li:hover{border: 5px solid #00abcd; }
+#content .new_product .product_slide ul li a{display: block;}
+#content .new_product .product_slide li:nth-of-type(3){margin-right: 0;}
+#content .new_product .product_slide .ex{position: relative;}
+#content .new_product .product_slide li img{width: 268px; height: 250px; margin-bottom: 35px; margin-top: 75px; transform: scale(1); transition: all .3s ease-in-out;} 
+#content .new_product .product_slide li:hover img{transform: scale(1.1);}
+
+#content .new_product .product_slide li a{position: relative; display: block; width: 340px; height: 520px;}
+#content .new_product .product_slide dl{overflow: hidden; text-align: center; display: inline-block;}
+#content .new_product .product_slide dl dd:nth-of-type(1){margin-right: 20px;}
+#content .new_product .product_slide dt{font-size: 24px; font-weight: 700; margin-bottom: 25px;}
+#content .new_product .product_slide dd{float: left;font-size: 18px; font-weight: 400; color: #666;}
+
+
+/* 회사소개 */
+#content .introduction {padding: 100px 25px 100px 25px; text-align: center;}
+
+#content .introduction ul li{overflow: hidden; margin-bottom: 100px; text-align: justify;}
+#content .introduction ul li:hover img{transform: scale(1.1);}
+#content .introduction ul li:hover dt{color: #00abcd;}
+#content .introduction img{float: left; width: 575px; height:350px; transition: all .5s ease-in-out; transform: scale(1); position: relative; z-index: -1;}
+#content .introduction dl{float: left; width: 530px; height: 230px ;background: #f9f9f9; padding: 80px 0 40px 45px;overflow: hidden;}
+#content .introduction dl dt{font-family: 'Roboto', sans-serif; font-size: 40px; font-weight: 700; margin-bottom: 20px; transition: all .5s ease;}
+#content .introduction dl dd:nth-of-type(1){font-size: 24px; font-weight: 400; margin-bottom: 60px; color: #666;}
+#content .introduction dl dd a{display: block;font-family: 'Roboto', sans-serif; font-size: 20px; font-weight: 400; color: #7ccadd; position: relative;}
+#content .introduction dl dd:hover a{font-weight: 700;}
+#content .introduction dl dd a::before{content: ''; display: block; width: 0; height: 4px; background: #00abcd; position: absolute; left: 0; bottom: -10px; transition: all .5s;}
+#content .introduction dl dd:hover a::before{content: ''; width: 485px;}
+
+
+
+
+
+/* 정도경영 */
+#content .management {text-align: center;}
+
+#content .management .manage_content ul{overflow: hidden; }
+#content .management .manage_content ul li{float: left; position: relative; overflow: hidden;}
+
+#content .management .manage_content ul li dl{position: absolute; left: 0;top: 0px;color: #fff;  width: 400px; height: 550px; background: rgba(0, 0, 0, .7); opacity: 0; transition: all .5s;}
+#content .management .manage_content ul li:hover dl{opacity: 1;}
+
+#content .management .manage_content ul li dt{font-size: 35px; font-weight: 700; margin-top: 280px; margin-bottom: 10px;color: #333; transition: all .5s;}
+#content .management .manage_content ul li:hover dt{color: #fff;}
+
+#content .management .manage_content ul dl dd{font-size: 26px; font-weight: 500;}
+#content .management .manage_content ul dl dd:first-of-type{margin-bottom: 30px;}
+#content .management .manage_content ul dl i{font-size: 60px;}
+
+#content .management .manage_content a{display: block;}
+#content .management .manage_content li a>i{font-size: 140px;color: #00abcd;position: absolute;left: 50%; top: 50%; margin-left: -70px; margin-top: -140px; z-index: 2;}
+
+#content .management .manage_content .philosophy a>i{margin-left: -48px; transition: all .5s;}
+#content .management .manage_content .philosophy:hover a>i{color: #fff;}
+
+#content .management .manage_content .ccm a>i{margin-left: -87px;transition: all .5s;}
+#content .management .manage_content .ccm:hover a>i{color: #fff;}
+
+#content .management .manage_content .csr a>i{margin-left: -78px;transition: all .5s;}
+#content .management .manage_content .csr:hover a>i{color: #fff;}
+
+
+
+
+/* 새소식 */
+#content .news{width: 2000px;position: relative;top: 0; left: 50%; margin-left:-1000px;}
+#content .news_inner{text-align: center; background: #f7f7f7;   padding: 100px 425px 100px 425px; margin: 0 auto; overflow: hidden;}
+
+#content .news .news_content { background: #fff;  }
+#content .news .news_content li{overflow: hidden;text-align: justify;}
+#content .news .news_content li a{display: block;}
+#content .news .news_content li img{float:left;margin-right: 90px; transform: scale(1); transition: all .3s ease-in-out; width: 217px; height: 152px;}
+#content .news .news_content li:nth-of-type(1){padding: 75px 165px 0 165px;}
+#content .news .news_content li:nth-of-type(2){padding: 65px 165px 75px 165px;}
+
+
+#content .news .news_content li dt{font-size: 24px; font-weight: 700; margin-bottom: 18px;}
+#content .news .news_content li dl:hover dt a{color: #00abcd;}
+#content .news .news_content li:hover img{transform: scale(1.1);}
+
+#content .news .news_content li dd{font-size: 18px; font-weight: 400; line-height: 1.5em; margin-bottom: 21px;}
+#content .news .news_content li span{display: block; color: #999;}
+
+#content .news .more{margin-top: 60px; float: right;}
+#content .news .more a{ display: block;font-family: 'Roboto', sans-serif; font-size: 20px; font-weight: 400; color: #333; transition: all .5s;}
+#content .news .more a:hover{color: #00abcd;}
+
+/* 인재상  */
+#content .recruit{text-align: center; width: 2000px; position: relative; top: 0; left: 50%; margin-left: -1000px; margin-bottom: 150px;
+    background: url(../images/recruit.jpg) bottom no-repeat; background-attachment: fixed; color: #fff;}
+#content .recruit_inner{width: 1200px; height:250px; margin: 0 auto; padding-top: 50px; padding-bottom: 50px; }
+#content .recruit_inner p{font-family: 'Nanum Myeongjo', serif;  font-weight: 400;}
+
+#content .recruit h3{font-size: 40px; margin-bottom: 45px;}
+#content .recruit p{font-size: 26px; margin-bottom: 60px;}
+#content .recruit a{font-size: 20px; font-weight: 500; border: 1px solid #00abcd; padding: 15px 20px; color: #fff; transition: all .5s ease-in-out;}
+#content .recruit a:hover{background: #00abcd;}
+
+
+
+/* 스크롤 */
+#content .slide_title{position: relative; bottom: -300px; opacity: 0; transition: all .8s;}
+
+/* 신제품 */
+
+#content .new_product .product_btn, #content .new_product .slide_gallery_box{opacity: 0; bottom: -300px; transition: all .8s;}
+#content .new_product .boxUpMove{bottom:0; opacity: 1;}
+
+
+/* 회사소개 */
+#content .introduction ul li{position: relative; opacity: 0; transition: all .8s; }
+#content .introduction ul li:first-of-type,#content .introduction ul li:nth-of-type(3){left: 500px;}
+#content .introduction ul li:nth-of-type(2){right: 500px;}
+#content .introduction ul li.boxLeftMove{left: 0; opacity: 1;}
+#content .introduction ul li.boxRightMove{right: 0; opacity: 1;}
+
+
+/* 정도경영 */
+#content .management ul li{ opacity: 0; top: -300px; transition: all .8s;}
+#content .management ul li:nth-of-type(2){transition-delay:.3s;}
+#content .management ul li:nth-of-type(3){transition-delay:.6s;}
+#content .management ul li.boxDownMove{top: 0; opacity: 1;}
+
+
+
+#content .boxUpMove{bottom:0; opacity: 1 }

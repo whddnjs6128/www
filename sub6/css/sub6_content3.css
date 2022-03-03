@@ -1,0 +1,28 @@
+/* 고객지원 - 온라인 문의 */
+
+.sub_menu ul{width: 750px;}
+#content .sub_nav ul{width: 600px;}
+#content .content_area h3{text-align: left;}
+#content .content_area h3.hidden{padding: 0; margin: 0;}
+#content .title_area h2{line-height: 1.5em;}
+#content .content_area{margin-top: 100px; margin-bottom: 150px;}
+#content .nece{margin-left: 35px; margin-bottom: 15px;}
+#content .nece span{color: #e60012; font-size: 22px;font-weight: 700;}
+.form-control{float: right; width: 900px; background: #f4f4f4f4; border-radius: 0;}
+.form-group{padding: 10px 50px; margin-top: 15px;}
+
+.control-group:first-of-type{border-top: 3px solid #00abcd;}
+.control-group:first-of-type label::before{content: none;}
+.control-group:first-of-type .form-control{display: inline; width: 15px; float: none; height: 15px; margin-left: 200px;}
+.control-group:first-of-type .help-block{float: none;}
+.control-group:first-of-type #info{width: 900px; height: 300px; display: block; margin-left: 200px; padding: 20px 50px; text-align: justify; color: #666; font-size: 16px; margin-bottom: 20px; resize: none;}
+
+.control-group{border-bottom: 1px solid #ccc;}
+.control-group:nth-of-type(4) textarea{resize: none;}
+.mail_content label{position: relative;}
+.mail_content label::before{position: absolute; content: '*'; color: #e60012; font-size: 22px;font-weight: 700; left: -15px; top: 0;}
+.row{margin: 0;}
+.row:last-of-type{text-align: center;}
+.help-block{float: left; margin-left: 200px; color: #e60012;}
+
+.control-group .text{height: 250px; resize: none;}

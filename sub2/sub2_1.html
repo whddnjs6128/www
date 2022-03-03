@@ -1,0 +1,61 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사업분야-동아ST제품</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub2common.css">
+    <link rel="stylesheet" href="./css/sub2_content1.css">
+    
+
+    <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+    
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="서브페이지_사업분야_비주얼">
+            <h3>사업분야</h3>
+        </div>
+
+
+        <div class="sub_menu">
+            <ul>
+                <li class="current"><a href="./sub2_1.html">동아ST제품</a></li>
+                <li><a href="./sub2_2.html">사업소개</a></li>
+                <li><a href="./sub2_3.html">제품FAQ</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <i class="fas fa-home"></i> &gt; 사업분야 &gt; <strong>동아ST제품</strong>
+                </div>
+                <h2>동아ST 제품</h2>
+                <p>혁신적 의약품 생산기업,<span> 동아ST</span>만의 신제품을 소개합니다.</p>
+            </div>
+
+            <div class="content_area">
+                
+                    <h3>검색 / 제품 리스트 예정</h3>
+            </div>
+
+        </article>
+
+
+        <? include "../common/sub_footer.html" ?>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* 기업정보 재무정보 */
+
+#content .title_area::after{content: ''; position: absolute; left: 50%;width: 2000px; height: 1px; bottom: 55px; background: #999; margin-left: -1000px;}
+.sub_menu ul{width: 750px;}
+#content .sub_nav ul{width: 600px;}
+
+
+.sub_menu ul{width: 750px;}
+#content .sub_nav ul{width: 600px;}
+
+ #content .content_area #chart,  #content .content_area .task_con #chart2{text-align: right;} 
+
+#content .content_area h3{width: 300px; float: left;margin-top: 0; font-size: 30px;}
+
+#content .content_area .task_con{margin-top: 100px; overflow: hidden;}
+#content .content_area .task_con:first-of-type{margin-top: 50px;}
+#content .content_area .task_con table{font-size: 16px; width: 900px;}
+
+#content .content_area .task_con thead tr th{border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; border-top: 1px solid #333; padding: 20px; background: #f7f7f7;}
+#content .content_area .task_con thead tr th:first-of-type{width: 30%;}
+#content .content_area .task_con thead tr:first-of-type th:last-of-type{border-right: none;}
+#content .content_area .task_con tbody tr th{border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;padding: 20px; font-weight: 400; text-align: left;}
+#content .content_area .task_con tbody tr td{border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 20px; text-align: right;}
+#content .content_area .task_con tbody tr td:last-of-type{border-right: none;}
+#content .content_area .task_con tbody tr th span{margin-left: 30px;}
+#content .content_area .task_con:first-of-type{margin-top: 150px;}
+#content .content_area .task_con:last-of-type{margin-bottom: 150px;}
+
+#content .content_area p{float: right; color: #999;margin-bottom: 15px;}
+

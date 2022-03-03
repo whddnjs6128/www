@@ -1,0 +1,47 @@
+/* 기업정보 인재상 */
+.sub_menu ul{width: 750px;}
+#content .sub_nav ul{width: 600px;}
+#content .content_area h3{margin: 0;}
+
+#content .content_area .top_textbox{margin-top: 30px; width: 1200px; padding: 125px 0 105px 0; margin-bottom: 50px; animation: grow 15s linear infinite;}
+#content .content_area .top_textbox p{text-align: center; font-size: 28px; font-weight: 400; color: #fff;line-height: 50px; }
+#content .content_area .top_textbox span{display: block; font-size: 40px; font-weight: 500; margin-bottom: 20px;}
+
+
+#content .talent_topcon{margin-top: 150px; overflow: hidden; margin-bottom: 100px;}
+#content .talent_topcon img{float: left; border-radius: 50px 10px; margin-top: 92px;}
+#content .talent_topcon dl{float: right; text-align: justify; width: 540px; }
+#content .talent_topcon dl dt{font-size: 30px; color: #00abcd; font-weight: 700;padding-left: 50px;}
+#content .talent_topcon dl dd{padding-left: 50px; line-height: 30px;margin-bottom: 10px;}
+#content .talent_topcon dl dd span{color: #00abcd;}
+#content .talent_topcon dl dd:first-of-type{font-size: 22px; line-height: 35px; margin-top: 30px; font-weight: 500; margin-bottom: 15px;position: relative;}
+#content .talent_topcon dl dd:first-of-type::before{position: absolute; content: ''; display: block;width: 500px; height: 1px; bottom: -15px;  background: #7ccadd;right: 65px; z-index: -1;}
+#content .talent_topcon dl dd:nth-of-type(2){margin-top: 30px;}
+#content .talent_topcon dl dd:last-of-type{margin-top: 30px;}
+
+
+#content .talent_midcon{width: 2000px; position: relative; left: 50%; margin-left: -1000px; top: 0; background: #00abcd; margin-bottom: 100px;}
+#content .talent_midcon .midcon_inner{width: 1200px; margin: 0 auto; padding: 20px 0;} 
+#content .talent_midcon p{font-size: 30px; color: #fff; font-weight: 700;text-align: center; }
+
+#content .talent_bottom h3{margin: 100px 0;}
+#content .talent_bottom {margin-bottom: 150px;}
+#content .talent_bottom ul{overflow: hidden; text-align: center;position: relative;}
+#content .talent_bottom ul::before{content: ''; display: block; position: absolute; top: 117px; left: 22px; width: 1156px;height: 1px; background: #999;}
+#content .talent_bottom ul li{float: left; margin-left: 72px; width: 235px;}
+#content .talent_bottom ul li:first-of-type{margin-left: 22px;}
+
+#content .talent_bottom ul li dl dt{font-size: 24px; position: relative; width: 235px; height: 235px;background: #fff; border: 1px solid #ccc; border-radius: 50%; font-weight: 700; box-sizing: border-box;}
+#content .talent_bottom ul li dl dt::before{content: ''; display: block; position: absolute; top: 47px; left: 50%;width: 108px; height: 108px; margin-left: -54px; background-position: 50% 50%; background-repeat: no-repeat; background-size: cover;}
+#content .talent_bottom ul li dl dt span{display: block; margin-top: 168px;}
+
+#content .talent_bottom ul li dl dd{margin-bottom: 5px; font-size: 20px;}
+#content .talent_bottom ul li dl dd:last-of-type{margin-bottom: 0;}
+#content .talent_bottom ul li dl dd:first-of-type{padding-top: 34px; position: relative;}
+#content .talent_bottom ul li dl dd:first-of-type::before{content: ''; position: absolute;display: block; width: 6px; height: 6px; left: 50%; margin-left: -3px; top: 20px; background: #00abcd; border-radius: 50%;}
+#content .talent_bottom ul li dl dd span{font-size: 22px; color: #00abcd;}
+
+#content .talent_bottom ul li:first-of-type dl dt::before{background-image: url(../images/content1/innovation.png);}
+#content .talent_bottom ul li:nth-of-type(2) dl dt::before{background-image: url(../images/content1/change.png);}
+#content .talent_bottom ul li:nth-of-type(3) dl dt::before{background-image: url(../images/content1/trust.png);}
+#content .talent_bottom ul li:nth-of-type(4) dl dt::before{background-image: url(../images/content1/together.png); }

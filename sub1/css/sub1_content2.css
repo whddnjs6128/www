@@ -1,0 +1,7 @@
+/* CEO인사말 */
+#content .content_area{margin-top: 150px; margin-bottom: 150px;overflow: hidden;}
+#content .content_area img{float: left;padding: 50px 0 0 113px;}
+#content .content_area .text_area{float: right; width: 600px; position: relative;}
+#content .content_area .text_area::before{content: ''; position: absolute; background: url(../common/images/logo.png); opacity: .3; top: 50%; left: 50%; margin-left: -100px; margin-top: -100px; width: 200px; height: 200px;}
+#content .content_area .text_area p{font-size: 20px; margin-bottom: 20px; text-align: justify;}
+#content .content_area .text_area p span{color: #00abcd;}

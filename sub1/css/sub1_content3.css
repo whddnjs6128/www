@@ -1,0 +1,20 @@
+/* 연혁 */
+#content .title_area::after{content: ''; position: absolute; left: 50%;width: 2000px; height: 1px; bottom: 55px; background: #999; margin-left: -1000px;}
+#content h3{text-align: center;}
+#content h3::before{content: ''; position: absolute; width: 8px; height: 40px; left: 50%; top: 12px;margin-left: -80px;background: #00abcd;}
+#content h3::after{content: ''; position: absolute; width: 8px; height: 40px; right: 50%; top: 12px;margin-right: -80px;background: #00abcd;}
+
+#content .content_area{text-align: center;}
+#content .content_area img{width: 70px; height: 70px; margin-top: 70px; }
+#content .content_area ul{padding-top: 100px; padding-bottom: 100px;position: relative; margin-bottom: 150px;}
+#content .content_area ul::before{content: ''; width: 2px; height: 100%; top: -1px; left: 50%; margin-left: -1px;position: absolute; background: #00abcd;}
+#content .content_area ul li{margin-bottom: 50px;}
+#content .content_area ul li:nth-of-type(2n+1) dl{text-align: right; margin-right: 635px;}
+#content .content_area ul li:nth-of-type(2n) dl{text-align: left; margin-left: 635px;}
+#content .content_area ul li dl dt{font-size: 26px;font-weight: 500;color: #00abcd;margin-bottom: 30px; position: relative;}
+#content .content_area ul li:nth-of-type(2n+1) dl dt::after{content: ''; position: absolute;top: 13px;right: -41px;width: 12px; height: 12px; border-radius: 50%; box-sizing: border-box; border: 3px solid #00abcd; background: #fff;}
+#content .content_area ul li:nth-of-type(2n) dl dt::before{content: ''; position: absolute;top: 13px;left: -41px;width: 12px; height: 12px; border-radius: 50%; box-sizing: border-box; border: 3px solid #00abcd; background: #fff;}
+#content .content_area ul li dl dd{font-size: 18px; margin-bottom: 15px;}
+#content .content_area ul li dl dd:last-of-type{margin-bottom: 0;}
+#content .content_area .contlist{display: none;}
+#content .content_area .contlist:first-of-type{display: block;}

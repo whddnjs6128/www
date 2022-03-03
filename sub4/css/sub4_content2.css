@@ -1,0 +1,42 @@
+/* 정도경영 ccm */
+.wrap .visual{background: url(../images/sub4/visual.png)no-repeat center;background-size: cover;}
+
+.sub_menu ul{width: 750px;}
+#content .sub_nav ul{width: 600px;}
+#content h3{width: 300px;margin-top: 0;}
+
+
+#content .content_area .ccm_topcon {margin-bottom: 50px; margin-top: 150px;}
+#content .content_area .ccm_topcon .top_textbox{ width: 1200px; margin-bottom: 100px; overflow: hidden;}
+#content .content_area .ccm_topcon .top_textbox img{float: left; margin-left:100px; width: 200px;}
+#content .content_area .top_textbox h3{display: block; width: auto;margin: 0 0 20px 0; color: #00abcd; text-align: justify; margin-left: 350px;}
+#content .content_area .top_textbox p{text-align: justify; font-size: 22px; font-weight: 400; color: #333;line-height: 40px;margin-right: 100px; margin-left: 350px;}
+#content .content_area .top_textbox p span{display: block; font-size: 18px; color: #999;}
+
+#content .content_area .ccm_intro{overflow: hidden; margin-bottom: 100px;}
+#content .content_area .ccm_intro h3{float: left;}
+
+#content .content_area .purpose{width: 2000px; position: relative; left: 50%; margin-left: -1000px; top: 0; background: url(../images/content2/purpose_back.jpg); color: #fff; margin-bottom: 100px;}
+#content .content_area .purpose .purpose_inner{width: 1200px; margin: 0 auto; padding-top: 50px; padding-bottom: 50px;line-height: 35px;}
+#content .content_area .purpose p:first-of-type{text-align: center; font-size: 22px; font-weight: 500; margin: 50px 130px;}
+#content .content_area .purpose ul{overflow: hidden;}
+#content .content_area .purpose li{float: left; width: 350px; margin-right: 75px; position: relative;}
+#content .content_area .purpose li::after{content: '';position: absolute; right: -36px; width: 2px; height: 100px; top:45px;background:#fff; display: block; }
+#content .content_area .purpose li:last-of-type{margin-right: 0;}
+#content .content_area .purpose ul li dl dt{font-size: 25px; font-weight: 500; margin-bottom: 10px; text-align: center; transition: all .5s;}
+#content .content_area .purpose ul li dl:hover dt{color: #00abcd; background: #fff;}
+
+
+#content .content_area .ccm_cert .img_wrap{overflow: hidden; margin: 0 auto; width: 1000px; padding-bottom: 150px;}
+#content .content_area .ccm_cert h3{width: auto;}
+#content .content_area .ccm_cert .img_wrap img{transition: all .6s;}
+#content .content_area .ccm_cert .img_wrap img:hover{box-shadow: 3px 3px 5px 3px #999; transform: scale(1.1);}
+#content .content_area .ccm_cert .img_wrap p:hover {color: #00abcd;}
+#content .content_area .ccm_cert a{display:block; width: 300px; margin: 110px 80px 0 0 ;}
+#content .content_area .ccm_cert a:first-of-type{float: left; margin-left: 80px;}
+#content .content_area .ccm_cert a:nth-of-type(2){float: right;}
+
+
+
+
+

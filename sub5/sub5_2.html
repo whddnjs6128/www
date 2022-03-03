@@ -1,0 +1,399 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업정보-주주총회</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub5common.css">
+    <link rel="stylesheet" href="./css/sub5_content2.css">
+    <link rel='stylesheet' href='./css/Nwagon.css'>
+	<script src='js/Nwagon.js'></script>
+
+
+    <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+    <? include "../common/sub_header.html" ?>
+    <div class="visual">
+        <img src="./common/images/visual.jpg" alt="서브페이지_기업정보_비주얼">
+        <h3>기업정보</h3>
+    </div>
+
+
+    <div class="sub_menu">
+        <ul>
+            <li><a href="./sub5_1.html">인재상</a></li>
+            <li class="current"><a href="./sub5_2.html">주주총회</a></li>
+            <li><a href="./sub5_3.html">재무정보</a></li>
+        </ul>
+    </div>
+
+    <article id="content">
+        <div class="title_area">
+            <div class="line_map">
+                <i class="fas fa-home"></i> &gt; 기업정보 &gt; <strong>주주총회</strong>
+            </div>
+            <h2>주주총회</h2>
+            <p><span>동아ST</span>의 주주에 관한 사항입니다.</p>
+        </div>
+
+        <div class="content_area">
+            
+            <div class="task_con">
+                <h3>주식발행 현황</h3>
+                <p>2021년 3월 31일 기준(단위:주)</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col" rowspan="2">구분</th>
+                            <th scope="col" colspan="3">주식의 종류</th>
+                            <th scope="col" rowspan="2">비고</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">보통주</th>
+                            <th scope="col">우선주</th>
+                            <th scope="col">합계</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>I.발행할 주식의 총수</td>
+                            <td>30,000,000</td>
+                            <td>30,000,000</td>
+                            <td>30,000,000</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>II.현재까지 발행한 주식의 총수</td>
+                            <td>8,443,868</td>
+                            <td>700,348</td>
+                            <td>9,114,216</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>III.현재까지 감소한 주식의 총수</td>
+                            <td>-</td>
+                            <td>700,348</td>
+                            <td>700,348</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+
+                            <td><span>1. 감자</span></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+
+                            <td><span>2. 이익소각</span></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+
+                            <td><span>3. 상환주식의 상환</span></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+
+                            <td><span>4. 기타</span></td>
+                            <td>-</td>
+                            <td>700,348</td>
+                            <td>700,348</td>
+                            <td>전환권 행사</td>
+                        </tr>
+                        <tr>
+                            <td>IV.발행주식의 총수(II-III)</td>
+                            <td>8,443,868</td>
+                            <td>-</td>
+                            <td>8,443,868</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>V.자기주식수</td>
+                            <td>5,478</td>
+                            <td>-</td>
+                            <td>5,478</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>VI.유통주식수(IV-V)</td>
+                            <td>8,438,390</td>
+                            <td>-</td>
+                            <td>8,438,390</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+            <div class="task_con">
+                <h3>주요주주현황</h3>
+                <p>2021년 3월 31일 기준</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">주주명</th>
+                            <th scope="col">주식의 종류</th>
+                            <th scope="col">소유주식수</th>
+                            <th scope="col">비율(%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>최대주주</td>
+                            <td>동아쏘시오홀딩스외<br />특수관계인 12명</td>
+                            <td>보통주</td>
+                            <td>2,076,701</td>
+                            <td>24.59</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">주요주주</td>
+                            <td>국민연금</td>
+                            <td>보통주</td>
+                            <td>865,169</td>
+                            <td>10.25</td>
+                        </tr>
+                        <tr>
+                            <td>Glaxo Group Limited</td>
+                            <td>보통주</td>
+                            <td>693,980</td>
+                            <td>8.22</td>
+                        </tr>
+                        <tr>
+                            <td>Otsuka<br />Pharmaceutical<br />Co., Ltd</td>
+                            <td>보통주</td>
+                            <td>420,924</td>
+                            <td>4.98</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">우리사주조합 </td>
+                            <td>보통주</td>
+                            <td class="txt_r ">475,847</td>
+                            <td class="txt_r ">5.64</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="chart"></div>
+            <script>
+                var options = {
+                    'dataset': {
+                        title: '주요주주현황',
+                        values:[2076701, 865169	, 693980, 420924, 475847 , 3911247],
+                        colorset: ['#56b4e9', '#e69f00', '#cc79a7', '#009e73', '#0072b2', '#00abcd'],
+                        fields: ['동아쏘시오홀딩스외 특수관계인 12명', '국민연금',  'Glaxo Group Limited', 'Otsuka Pharmaceutical Co', '우리사주조합', ' '] 
+                    },
+                    'donut_width' : 100, 
+                    'core_circle_radius':0,
+                    'chartDiv': 'chart',
+                    'chartType': 'pie',
+                    'chartSize': {width:600, height:300}
+                };
+
+                Nwagon.chart(options);
+            </script>
+
+
+            <div class="task_con">
+                <h3>전자투표, 서면투표 및 집중투표 도입 현황</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">도입여부</th>
+                            <th scope="col">도입일자</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>전자투표제 및 전자위임장</td>
+                            <td>도입</td>
+                            <td>2018.03.27</td>
+                        </tr>
+                        <tr>
+                            <td>서면투표제</td>
+                            <td>미도입</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td class="first last">집중투표제</td>
+                            <td class="last">배제</td>
+                            <td class="last">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="task_con">
+                <h3>배당관련사항</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="3">구분</th>
+                            <th scope="col">FY2020</th>
+                            <th scope="col">FY2019</th>
+                            <th scope="col">FY2018</th>
+                            <th scope="col">FY2017</th>
+                            <th scope="col">FY2016</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4">현금</td>
+                            <td rowspan="2" >배당총액 (백만원)</td>
+                            <td>보통주</td>
+                            <td>8,438</td>
+                            <td>8,438</td>
+                            <td>8,438</td>
+                            <td>4,219</td>
+                            <td>4,220</td>
+                        </tr>
+                        <tr>
+                            <td>우선주</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">1주당 배당금(원)</td>
+                            <td>보통주</td>
+                            <td>1,000</td>
+                            <td>1,000</td>
+                            <td>1,000</td>
+                            <td>500</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>우선주</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">주식</td>
+                            <td rowspan="2">배당주식총수 (주)</td>
+                            <td>보통주</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>우선주</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">1주당배당주식수 (%)</td>
+                            <td>보통주</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>우선주</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="task_con">
+                <h3>제8기(2020년) 정기주주총회 의결권행사 현황</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">의결권주식 총수</th>
+                            <th scope="col" colspan="4">주주총회 참석 주식수</th>
+                            <!--					<th scope="col">비고</th>-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" class="first last">8,438,390</td>
+                            <td>최대주주 등</td>
+                            <td>기타주주</td>
+                            <td>소액주주<br>(우리사주조합포함)</td>
+                            <td>합계<br>(출석률)</td>
+                            <!--						<td rowspan="2" >-</td>-->
+                        </tr>
+                        <tr>
+                            <td>2,000,999</td>
+                            <td>1,660,482</td>
+                            <td>1,496,897</td>
+                            <td>5,158,378<br>(61.1%)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div id="chart2"></div>
+            <script>
+                var options = {
+                    'dataset': {
+                        title: '주주총회 참석 주식수',
+                        values:[2000999, 1660482, 1496897 ,3280012 ],
+                        colorset: ['#05606c', '#00abcd', '#7ccadd','#ccc'],
+                        fields: ['최대주주 등', '기타주주',  '소액주주', '미참석'] 
+                    },
+                    'donut_width' : 100, 
+                    'core_circle_radius':0,
+                    'chartDiv': 'chart2',
+                    'chartType': 'pie',
+                    'chartSize': {width:600, height:300}
+                };
+
+                Nwagon.chart(options);
+            </script>
+                <p>※ 당사는 제5기 정기주주총회부터 전자투표 및 전자위임장 제도를 도입하였습니다.</p>
+            </div>
+
+
+
+        </div>
+
+    </article>
+
+
+    <? include "../common/sub_footer.html" ?>
+
+</body>
+
+</html>

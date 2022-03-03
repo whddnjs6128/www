@@ -1,0 +1,40 @@
+/* 정도경영 철학 */
+
+.sub_menu ul{width: 750px;}
+#content .sub_nav ul{width: 600px;}
+
+#content .content_area h3{text-align: center;}
+#content .content_area h3.hidden{padding: 0; margin: 0;}
+
+
+#content .content_area .philo_topcon {margin-bottom: 50px; margin-top: 150px;}
+#content .content_area .philo_topcon .top_textbox{background: url(../images/content1/visual.jpg); width: 1200px; margin-bottom: 50px; overflow: hidden;}
+#content .content_area .philo_topcon .top_textbox img{float: left; margin: 58px 0 58px 120px;}
+#content .content_area .top_textbox p{text-align: justify; font-size: 28px; font-weight: 400; color: #333;line-height: 50px; float: left; margin-top: 150px; margin-left: 100px;}
+#content .content_area .top_textbox span{display: block; font-size: 40px; font-weight: 700; margin-bottom: 20px; color: #05606c;}
+
+
+#content .content_area p.mid_con{font-size: 24px; text-align: justify;font-weight: 500; margin-bottom: 50px; position: relative; line-height: 50px; }
+#content .content_area p.mid_con span{font-weight: 700; color: #00abcd; font-size: 28px;}
+#content .content_area p.mid_con:first-of-type{text-align: center;}
+#content .content_area p.mid_con:first-of-type::before{content: ''; height: 1px; width: 600px; bottom: -50px; left: 50%; margin-left: -300px; background: #ccc; position: absolute;}
+#content .content_area p.mid_con:last-of-type{margin-bottom: 150px; margin-top: 50px;}
+#content .content_area p.mid_con.m2{margin-bottom: 100px;}
+#content .content_area .circle_con{position: relative; padding: 50px 0; background: #f7f7f7; border-radius: 10%;}
+#content .content_area .circle_con .center_text{display: block; width: 140px; height: 234px; background:url(../images/content1/ceo_jeong.png); text-indent: -999px; overflow: hidden; position: absolute; left: 50%;margin-left: -70px; top: 50%;margin-top: -117px;}
+
+#content .content_area .circle_con ul{position: relative;height: 700px;}
+#content .content_area .circle_con ul li{text-align: center; position: absolute; box-sizing: border-box; width: 200px; height: 200px;}
+#content .content_area .circle_con ul li img{margin:17px 0 10px 0; width: 64px;}
+#content .content_area .circle_con ul li dl{width: 200px; margin-bottom: 17px; color: #333;}
+#content .content_area .circle_con ul li dl dt{font-size: 20px; font-weight: 500;margin-bottom: 5px; color: #00abcd;}
+#content .content_area .circle_con ul li dl dd:first-of-type{margin-bottom: 3px;}
+#content .content_area .circle_con ul li:first-of-type{left: 50%; margin-left: -100px; ;}
+#content .content_area .circle_con ul li:nth-of-type(2){top: 28%; left: 20%;}
+#content .content_area .circle_con ul li:nth-of-type(3){top: 28%; right: 20%;}
+#content .content_area .circle_con ul li:nth-of-type(4){bottom: 0; left: 28%;}
+#content .content_area .circle_con ul li:nth-of-type(5){bottom: 0; right: 28%;}
+
+#content .content_area .ceo_text{display: block; width: 766px; height: 500px; background:url(../images/content1/ceo_txt.jpg); text-indent: -999px; overflow: hidden; margin: 50px auto}
+
+

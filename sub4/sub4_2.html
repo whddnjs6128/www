@@ -1,0 +1,117 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정도경영-CCM</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <link rel="stylesheet" href="./css/sub4_content2.css">
+    
+
+    <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+    
+    <? include "../common/sub_header.html" ?>
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="서브페이지_사업분야_비주얼">
+            <h3>정도경영</h3>
+        </div>
+
+
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub4_1.html">철학</a></li>
+                <li class="current"><a href="./sub4_2.html">CCM</a></li>
+                <li><a href="./sub4_3.html">CSR</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <i class="fas fa-home"></i> &gt; 정도경영 &gt; <strong>CCM</strong>
+                </div>
+                <h2>CCM</h2>
+                <p><span>동아ST</span>는 언제나 고객님의 편의를 먼저 생각합니다.</p>
+
+            </div>
+
+            <div class="content_area">
+                <div class="ccm_topcon">
+                    <div class="top_textbox">
+                        <img src="images/content2/ccm_mark.png" alt="ccm 마크">
+                        <h3>소비자중심경영이란</h3>
+                        <p>기업이 수행하는 모든 활동을 소비자 관점에서, 소비자 중심으로 구성하고, 관련 경영활동을 지속적으로 개선하고 있는지를 평가하여 인증하는 제도입니다.
+                            <span>※근거 소비자기본법 제20조의 2~4</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="ccm_intro">
+                    <h3>CCM 소개</h3>
+                    <iframe width="900" height="600" src="https://www.youtube.com/embed/9j4hhJO-rv8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="purpose">
+                    <div class="purpose_inner">
+                        <h3>목적 및 기대효과</h3>
+
+                        <p>CCM 인증제도는 기업 및 기관의 소비자 지향적 경영문화 확산과 소비자 권익 증진 노력을 통한 경쟁력 강화 및 소비자 후생증대에 기여함을 목적으로 합니다.</p>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>소비자 권리 확보</dt>
+                                <dd>소비자 측면에서는 상품 및 서비스 선택기준이 되는 정보를 제공받고, 기업과 소비자간 문제 발생 시, 소비자중심경영(CCM) 운영 체계에 따라 신속하고 합리적인 해결이 가능하다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>기업 가치 증진</dt>
+                                <dd>기업 측면에서는 최고경영자(CEO)와 임직원의 소비자 권익에 대한 인식을 제고하고, 상품과 서비스 수준을 소비자 관점으로 끊임없이 개선함으로써 대내외 경쟁력을 강화할 수 있다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>사회적 비용 절감</dt>
+                                <dd>공공 측면에서는 사후 분쟁해결 및 행정조치로 인한 사회적 비용을 절감하고, 소비자중심의 선순환 시장을 조성함으로써 기업-소비자 상생문화 확산에 기여한다.</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="ccm_cert">
+                    <h3>CCM 인증 및 운영기관</h3>
+    
+                    <div class="img_wrap">
+                        <a href="https://www.ftc.go.kr/" target="_blank" title="한국소비자원 새창에 열림">
+                            <img src="./images/content2/mark.jpg" alt="한국소비자원">
+                            
+                        </a>
+                        <a href="https://www.kca.go.kr/home/main.do" target="_blank" title="공정거래위원회 새창에 열림">
+                            <img src="./images/content2/mark2.jpg" alt="공정거래위원회">
+                        </a>
+                    </div> 
+    
+                    
+                </div>
+            </div>
+
+        </article>
+
+
+        <? include "../common/sub_footer.html" ?>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+#write_form{text-align: center; font-size: 18px;}
+#write_form #write_row1{overflow: hidden; border-top: 3px solid #00abcd;border-bottom: 1px solid #ccc;}
+
+#write_form #write_row2,
+#write_form #write_row3{overflow: hidden; border-bottom: 1px solid #ccc;}
+
+#write_form #write_row4,
+#write_form #write_row5,
+#write_form #write_row6{overflow: hidden;}
+
+#write_form .col1{width: 100px; padding: 20px; float: left; font-size: 20px; font-weight: 700;}
+
+#write_form #write_row1 .col2 input{width: 1000px; font-size: 18px; padding: 12px; margin: 12px auto; border: none; background: #f7f7f7;font-family: 'Noto Sans KR', sans-serif;}
+#write_form #write_row2 .col2{float: left; font-size: 20px; padding: 20px;}
+#write_form #write_row2 .col3{float: right; font-size: 20px;padding: 20px;}
+#write_form #write_row3 .col2 textarea{width: 1000px; margin: 20px auto; padding: 12px; resize: none; border: none; background: #f7f7f7; font-size: 18px; font-family: 'Noto Sans KR', sans-serif; overflow-y: scroll;}
+
+#write_form #write_row4 .col1,
+#write_form #write_row5 .col1,
+#write_form #write_row6 .col1{width: 120px;}
+#write_form #write_row4 .col2,
+#write_form #write_row5 .col2,
+#write_form #write_row6 .col2{float: left; padding: 20px;}
+
+
+#write_form .delete_ok{text-align: justify; margin-left: 180px;}
+#write_button{text-align: center; margin-top: 30px;}
+#write_button a{display: inline-block;font-size: 20px; color: #999; border: 1px solid #ccc; width: 100px; padding: 10px 0; text-align: center;  font-weight: 400; font-family: 'Noto Sans KR', sans-serif; transition: all .3s;}
+#write_button a:hover{border: 1px solid #333; color: #333;}
+
+#write_button a:last-of-type{border: 1px solid #00abcd; color: #00abcd; transition: all .3s;}
+#write_button a:last-of-type:hover{background: #00abcd; color: #fff;}
+
+
+#write_button a{margin-right: 15px;}
